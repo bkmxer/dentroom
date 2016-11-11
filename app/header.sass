@@ -3,3 +3,149 @@
 @import "sass/base"
 
 //First screen styles
+
+body, html
+  width: 100%
+  height: 100%
+  font-family: $default-font
+  font-size: 1em
+  margin: 0
+  padding: 0
+
+
+
+header
+  background-image: url(img/smiling.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+  min-height: 100vh
+  color: $alt_font_color
+  .logo
+    img
+      width: 100%
+      max-width: 400px
+      margin: 0 auto
+      display: block
+  .top_line
+    background-color: $accent_transparent
+  strong
+    font-weight: 100
+    font-size: 1.5rem
+    text-transform: uppercase
+    display: block
+  .doctor
+    font-size: 1.2rem
+    padding: 10px
+    &.right_doc
+      text-align: right
+    a
+      color: $alt_font_color
+      &:focus,
+      &:active,
+      &:hover
+        text-decoration: none
+        color: $alt_font_color
+
+
+
+
+.hidden-desktop
+  display: none
+
+.menu-trigger
+  text-align: center
+  background-color: #E24A37
+
+nav
+  width: 100%
+  background-color: $accent
+  li
+    display: inline-block
+    &:hover
+       background-color: lighten($accent, 5%)
+  a
+    display: block
+    text-decoration: none
+    padding: 20px
+    color: #F2EEEA
+    &:hover,
+    &:active,
+    &:focus,
+    &.active
+      color: $alt_font_color
+      text-decoration: none
+
+  ul
+    margin: 0
+    padding: 0
+.left-side-wrapper
+  position: relative
+  color: $default_font_color
+  margin-top: 300px
+
+form[action="mail.php"]
+  margin: 50px 0
+  background-color: $third_color_transparent
+  padding: 10px
+  color: $default_font_color
+  p
+    width: 90%
+    display: block
+    margin: 0 auto
+  .legend
+    text-transform: uppercase
+    font-size: 1.5em
+    color: $default_font_color
+    text-align: right
+    margin-bottom: 20px
+  input,
+  button
+    display: block
+    width: 90%
+    margin: 10px auto
+    padding: 10px 15px
+  input
+    color: #666
+    &::placeholder
+      color: #999
+  button
+    background-color: $accent
+    color: $alt_font_color
+    text-transform: uppercase
+    border: 0
+    margin-top: 20px
+    padding: 15px 25px
+section.aboutUs
+  background-image: url("img/bg-room.jpeg")
+  -webkit-background-size: cover
+  background-color: rgba(255, 255, 255, .8)
+  background-blend-mode: screen
+  background-size: cover
+  p.centered
+    text-align: center
+  .doc_photo
+    img
+     border-bottom: 30px solid $accent
+
+.row
+  display: table
+  border-spacing: 20px
+  div[class*="col-"].table-cell
+    float: none
+    display: table-cell
+    vertical-align: top
+    border: 3px solid $accent
+    padding: 15px
+
+.advantage_icon
+   img
+     width: 30%
+     display: block
+    
+
+    
+
+
+
+
+

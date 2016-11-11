@@ -1,12 +1,12 @@
 {
-  "name": "optimizedhtml",
+  "name": "Antonenko-dentroom",
   "version": "1.0.0",
-  "description": "OptimizedHTML - Start HTML Template",
+  "description": "Personal Dentroom of Alex Antonenko",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "Bkmxer",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.11.1",
