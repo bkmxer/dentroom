@@ -1,9 +1,9 @@
 $(document).ready(function() {
         $('a.menu-trigger').click(function(){
-            $('nav ul').slideToggle(500);
+            $('nav ul').slideToggle(768);
         });
         $(window).resize(function(){
-            if($(window).width()>500){
+            if($(window).width()>768){
                 $('nav ul').removeAttr('style');
             }
         })
@@ -11,19 +11,20 @@ $(document).ready(function() {
         // var
         var $nav =  $('.nav-underline'),
             $line = $('<div>').appendTo($nav),
-            $activeLi,
+            $activeA,
             lineWidth,
             liPos;
         function refresh (){
-            $activeLi = $nav.find('li.active');
-            lineWidth = $activeLi.outerWidth();
-            liPos = $activeLi.position().left;
+            $activeA = $('nav li a.active');
+            lineWidth = $activeA.parent().outerWidth();
+            liPos =  $activeA.parent().position().left;
         }
         refresh();
         $nav.css('position', 'relative');
 
-        // line setup
+            // line setup
         function lineSet() {
+            $line.addClass("hidden-xs");
             $line.css({
                 'position':'absolute',
                 'background-color':'#ffffff',
@@ -37,11 +38,50 @@ $(document).ready(function() {
         lineSet();
 
         //onClick
-        $nav.find('li').on('click', function() {
-            $activeLi.removeClass('active');
+        $('nav a[href*="#"]').on('click', function() {
+
+            $activeA.removeClass('active');
             $(this).addClass('active');
             refresh();
             lineSet();
+
+
+
         });
+
+    $('.parallax-window').parallax({imageSrc: 'img/bg-room.jpeg'});
 });
 
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+/*NAVIGATION BAR stickness START */
+
+var $headerSection = $('.header');
+var $navBarPosition = $('nav').outerHeight(true)+50;
+$(window).scroll(function() {
+    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {}
+    else{
+        if ($(this).scrollTop() > $headerSection.offset().top + $headerSection.outerHeight(true)){
+            $('.fixed_head').addClass("sticky");
+            $('.aboutUs').css("paddingBottom", $navBarPosition);
+        }
+        else{
+            $('.fixed_head').removeClass("sticky");
+            $('.aboutUs').css("paddingBottom", "50px");
+        }
+    }
+
+});

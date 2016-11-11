@@ -31,3 +31,58 @@ body
 	line-height: 1.6
 	font-family: $default-font
 	overflow-x: hidden
+
+.row.table-row
+	div[class*="col-"].table-cell
+		border: 3px solid $accent
+		padding: 20px
+		&:hover
+			color: $alt_font_color
+			cursor: pointer
+			background-color: $accent_transparent
+
+
+
+
+
+
+section.doctors
+	padding-top: 50px
+	background-color: $third_color
+	.doc_photo_block
+		padding: 20px
+		img
+			width: 100%
+		.doc_description
+			bottom: 0
+			position: absolute
+			padding: 2em
+			padding-right: 4em
+			.doc_description-wrapper
+				background-color: $accent_transparent
+				padding: .8em
+				color: $alt_font_color
+				text-align: center
+			.doc_name
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 1.6em
+
+			hr
+				border-top: 5px solid $alt_font_color
+				margin: 0.3em 0
+section#services
+	background-color: rgba(255,255,255,.8)
+	background-blend-mode: screen
+	background-size: cover
+	padding-bottom: 50px
+	.flex-services_wrapper
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+	.service_box
+		width: 250px
+		border: 1px solid $accent_less_transparent
+		padding: 20px
+		display: block
+		margin: 20px

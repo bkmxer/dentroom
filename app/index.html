@@ -63,7 +63,7 @@
 <body>
 
 	<!-- Custom HTML -->
-<header>
+<header class="header" id="main">
 <div class="top_line">
 	<div class="container">
 		<div class="row">
@@ -73,7 +73,7 @@
 					<div class="tel"><a href="tel:18475555555"><i class="fa fa-phone" aria-hidden="true"></i> 1-847-555-5555</a></div>
 					<div class="mail"><a href="mailto:Antohey@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> Antohey@mail.ru</a></div>
 					<div class="working_hours"> <i class="fa fa-clock-o" aria-hidden="true"></i> 13:00 - 18:00</div>
-					<div class="location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7 (во дворе)</a></div>
+					<div class="location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7</a></div>
 
 				</div>
 			</div>
@@ -88,7 +88,7 @@
 					<div class="tel"><a href="tel:18475555555"><i class="fa fa-phone" aria-hidden="true"></i> 1-847-555-5555</a></div>
 					<div class="mail"><a href="mailto:Antohey@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> Antohey@mail.ru</a></div>
 					<div class="working_hours"> <i class="fa fa-clock-o" aria-hidden="true"></i> 13:00 - 18:00</div>
-					<div class="location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7 (во дворе)</a></div>
+					<div class="location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7 </a></div>
 				</div>
 			</div>
 			<div class="hidden-md hidden-lg col-sm-12">
@@ -103,7 +103,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="left-side-wrapper">
-					<h1>Стоматологический кабинет</h1>
+					<h1>Стоматологический кабинет Антоненко</h1>
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam labore laboriosam, nisi officiis perspiciatis sunt? Aspernatur, eveniet minus? Explicabo, nobis.
@@ -127,18 +127,18 @@
 		</div>
 	</div>
 </header>
-	<nav class="nav-underline">
+	<nav class="nav-underline fixed_head">
 		<a href="#" class="menu-trigger hidden-desktop">Menu</a>
 		<ul>
-			<li class="active"><a href="#">Главная</a></li>
-			<li><a href="#">Информация о нас</a></li>
-			<li><a href="#">Гарантии</a></li>
-			<li><a href="#">Услуги</a></li>
-			<li><a href="#">Результат</a></li>
-			<li><a href="#">Контакты</a></li>
+			<li ><a class="active"  href="#main">Главная</a></li>
+			<li><a  href="#info">Информация о нас</a></li>
+			<li><a href="#services">Услуги</a></li>
+			<li><a href="#price">Цены</a></li>
+			<li><a href="#result">Галерея</a></li>
+			<li><a href="#contacts">Контакты</a></li>
 		</ul>
 	</nav>
-	<section class="aboutUs ">
+	<section id="info" class="aboutUs parallax-window" data-parallax="scroll" data-image-src="img/bg-room.jpeg">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -147,30 +147,31 @@
 				</div>
 			</div>
 			<div class="row table-row">
-				<div class="col-sm-4 table-cell">
+				<div class="col-md-4 table-cell">
 
 						<div class="advantage_icon">
-							<img src="img/svg/heart.svg" alt="Работает с заботой о Вас">
+							<img src="img/svg/heart.svg" alt="Работает с заботой о Вас" style="width: 30%; height: 30%">
+
 						</div>
 						<h2>Работаем с заботой о Вас</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
 
 				</div>
-				<div class="col-sm-4 table-cell">
+				<div class="col-md-4 table-cell">
 
 						<div class="advantage_icon">
-							<img src="img/svg/checked.svg" alt="Предоставляем гарантии на все работы">
+							<img src="img/svg/checked.svg" alt="Предоставляем гарантии на все работы" style="width: 30%; height: 30%">
 						</div>
 						<h2>Предоставляем гарантии на все работы</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
 
 				</div>
-				<div class="col-sm-4 table-cell">
+				<div class="col-md-4 table-cell">
 
 						<div class="advantage_icon">
-							<img src="img/svg/book-with-bookmark.svg" alt="Долгие годы опыта">
+							<img src="img/svg/mortarboard.svg" alt="Долгие годы опыта" style="width: 30%; height: 30%">
 						</div>
 						<h2>Грандиозный опыт</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
@@ -182,30 +183,189 @@
 			</div>
 
 	</section>
-	<section >
+	<section class="doctors">
 		<div class="container">
-			<div class="row"><div class="col-sm-6">
-				<div class="doc_block">
-					<div class="doc_photo">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="sect_descr">
+						<h1>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid assumenda blanditiis consequatur corporis dolorem, eaque error esse excepturi, expedita explicabo facere illo iste nihil optio rem vel veritatis vero?
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="doc_photo_block">
 						<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
 						<div class="doc_description">
-							<span class="doc_name">John Doe</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur debitis earum excepturi, itaque iure molestiae mollitia ullam voluptas voluptatibus. Ad beatae est, explicabo fugit illo pariatur quaerat quasi quibusdam, reiciendis repudiandae sequi soluta, sunt tempore ullam unde. Aliquid atque autem consectetur consequatur esse facilis fuga, officiis saepe temporibus voluptatibus.</p>
+							<div class="doc_description-wrapper">
+								<span class="doc_name">John Doe</span>
+								<hr>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur debitis earum excepturi, itaque iure molestiae mollitia ullam voluptas voluptatibus. Ad beatae est, explicabo fugit illo pariatur quaerat quasi quibusdam, reiciendis repudiandae sequi soluta, sunt tempore ullam unde. </p>
+							</div>
 						</div>
 					</div>
 
-				</div>
+
 			</div>
-				<div class="col-sm-6">
-					<div class="doc_block">
-						<div class="doc_photo">
-							<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
+				<div class="col-md-6">
+
+					<div class="doc_photo_block">
+						<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
+						<div class="doc_description">
+							<div class="doc_description-wrapper">
+								<span class="doc_name">John Doe</span>
+								<hr>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur debitis earum excepturi, itaque iure molestiae mollitia ullam voluptas voluptatibus. Ad beatae est, explicabo fugit illo pariatur quaerat quasi quibusdam, reiciendis repudiandae sequi soluta, sunt tempore ullam unde. </p>
+							</div>
 						</div>
 					</div>
+
+
 				</div>
 			</div>
 		</div>
 	</section>
+<section id="services" data-parallax="scroll" data-image-src="img/dental_smile.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="">
+				<div class="flex-services_wrapper">
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+					<div class="service_box">
+						<div class="service_img">
+							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+						</div>
+						<div class="service_description">
+							<h2 class="service_name">
+								Детская дентология
+							</h2>
+							<p class="service_descr">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
+							</p>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="price">
+	<hr><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</section>
+
+
+<section id="result">
+	<hr><br>
+	<br>
+	<br><br><br><br><br>
+</section>
+<section id="contacts">
+	<hr><br><br><br><br><br><br>
+</section>
 
 	<!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[

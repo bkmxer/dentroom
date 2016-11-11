@@ -10,12 +10,35 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
-
+  .left-side-wrapper
+    margin-top: 0
+  .row.table-row
+    div[class*="col-"].table-cell
+      margin-bottom: 20px
+      text-align: center
+      border: 10px solid $accent
+      img
+        display: block
+        margin: 0 auto
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  nav
+    li
+      display: block
+      text-align: center
+    a
+      border-bottom: 3px solid #B24133
+      padding-bottom: 15px
+    ul
+      display: none
+  .hidden-desktop
+    display: block
+
+@media only screen and (max-width : 579px)
+  section#services
+    .flex-services_wrapper
+    .service_box
+      width: auto
 
 
 /* Extra Small Devices, Phones */
@@ -42,12 +65,17 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
+  /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	/**/
+  .row.table-row
+    display: table
+    border-spacing: 20px
+    div[class*="col-"].table-cell
+      float: none
+      display: table-cell
+      vertical-align: top
+      border: 3px solid $accent
+      padding: 20px
 
 
 /* Large Devices, Wide Screens */
@@ -55,15 +83,4 @@
 	/**/
 
 /*additional media querry
-@media screen and (max-width: 500px)
-  nav
-    li
-      display: block
-      text-align: center
-    a
-      border-bottom: 5px solid #B24133
-      padding-bottom: 15px
-    ul
-      display: none
-  .hidden-desktop
-    display: block
+
