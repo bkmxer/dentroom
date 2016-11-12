@@ -47,7 +47,7 @@ body
 
 
 section.doctors
-	padding-top: 50px
+	padding: 50px 0px
 	background-color: $third_color
 	.doc_photo_block
 		padding: 20px
@@ -75,7 +75,7 @@ section#services
 	background-color: rgba(255,255,255,.8)
 	background-blend-mode: screen
 	background-size: cover
-	padding-bottom: 50px
+	padding: 50px 0px
 	.flex-services_wrapper
 		display: flex
 		justify-content: center
@@ -86,3 +86,82 @@ section#services
 		padding: 20px
 		display: block
 		margin: 20px
+		
+		
+section#contacts
+	padding-top: 50px
+	.external_gmap
+		width: 100vw
+		height: 60vh
+
+#footer
+	background-color: $third_color_transparent
+	font-size: 0.8em
+	a
+		color: #333
+	a.socials_link
+		background-color: $alt_font_color
+		border: 1px solid $accent
+		color: $accent
+		width: 2.3em
+		height: 2.3em
+		font-size: 1.3em
+		display: inline-block
+		margin: 0 auto
+		text-align: center
+		vertical-align: middle
+		padding: 0.4em
+		-webkit-border-radius: 50%
+		-moz-border-radius: 50%
+		border-radius: 50%
+		-webkit-transition: all  0.3s ease-out
+		-moz-transition: all  0.3s ease-out
+		-ms-transition: all  0.3s ease-out
+		-o-transition: all  0.3s ease-out
+		transition: all  0.3s ease-out
+		&:hover
+			color: $alt_font_color
+			background-color: $accent
+			border: 1px solid $alt_font_color
+	hr
+		margin-bottom: 0
+		margin-top: 5px
+		border-top: 0.15em solid $alt_font_color
+	.cprt
+		width: 100%
+		color: $alt_font_color
+		padding: 0.6em
+		font-size: 0.7em
+		text-align: center
+		background-color: lighten($accent, 0%)
+	.col-footer
+		width: 49%
+		display: inline-block
+	a.form_callee_button
+		width: 60%
+		background-color: $accent_transparent
+		border: 1px solid $alt_font_color
+		color: $alt_font_color
+		padding: 10px
+		display: block
+		margin: 10px auto
+		text-align: center
+		text-transform: uppercase
+		-webkit-transition: all 0.3s ease-in
+		-moz-transition: all 0.3s ease-in
+		-ms-transition: all 0.3s ease-in
+		-o-transition: all 0.3s ease-in
+		transition: all 0.3s ease-in
+		&:hover,
+		&:active,
+		&:focus
+			color: $alt_font_color
+			text-decoration: none
+		&:hover
+			color: $accent
+			background-color: $alt_font_color
+			border: 1px solid $accent
+
+
+
+
