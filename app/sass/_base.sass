@@ -36,6 +36,20 @@ body
 	div[class*="col-"].table-cell
 		border: 3px solid $accent
 		padding: 20px
+		a
+			font-size: 0.85em
+			color: $accent
+			display: block
+			position: absolute
+			width: 100%
+			left: 0
+			padding: 20px
+			bottom: 0
+			background-color: rgba(255,255,255, .8)
+			animation-duration: .3s
+			animation-delay: .5s
+			animation-iteration-count: 1
+			text-transform: uppercase
 		&:hover
 			color: $alt_font_color
 			cursor: pointer
@@ -53,6 +67,7 @@ section.doctors
 		padding: 20px
 		img
 			width: 100%
+			box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px
 		.doc_description
 			bottom: 0
 			position: absolute
@@ -75,28 +90,107 @@ section#services
 	background-color: rgba(255,255,255,.8)
 	background-blend-mode: screen
 	background-size: cover
-	padding: 50px 0px
+	padding: 50px 0px 0px 0px
 	.flex-services_wrapper
 		display: flex
 		justify-content: center
 		flex-wrap: wrap
 	.service_box
+
 		width: 250px
 		border: 1px solid $accent_less_transparent
 		padding: 20px
 		display: block
 		margin: 20px
 		
-		
-section#contacts
-	padding-top: 50px
-	.external_gmap
-		width: 100vw
-		height: 60vh
+section.any_questions
+	padding: 20px 0
+	background-color: $third_color
+	vertical-align: middle
+	text-align: center
+	img
+		width: 100%
+		height: 100%
+		-webkit-animation-delay: 0.5s
+		-moz-animation-delay: 0.5s
+		-o-animation-delay: 0.5s
+		animation-delay: 0.5s
+		-webkit-animation-iteration-count: infinite
+		-moz-animation-iteration-count: infinite
+		-o-animation-iteration-count: infinite
+		animation-iteration-count: infinite
 
+section#photos
+  padding-bottom:  50px
+  background-color: rgba(255,255,255,.6)
+  background-blend-mode: screen
+  background-size: cover
+  .img_wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    img
+      margin: 10px
+      border: 5px solid $alt_font_color
+
+
+
+
+
+section#contacts
+	padding-top: 20px
+	form[action="mail.php"]
+		margin: 20px
+		font-size: 0.8em
+		box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px
+		.legend
+			font-size: 1.2em
+		input,
+		button,
+		textarea
+			margin: 5px 10px
+	position: relative
+	.external_gmap
+		position: absolute
+		width: 100%
+		min-height: 100%
+		&.mobilemap
+			width: 95%
+	.our_contacts
+		position: absolute
+		background-color: $alt_font_color
+		font-size: 0.8em
+		padding: 10px
+		top: 30px
+		left: 10px
+		box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px
+		width: auto
+		.col-footer
+			width: 49%
+			display: inline-block
+			vertical-align: top
+			a
+				color: #333
+section#articles
+  a.article_block
+    color: #333
+    display: flex
+    flex-wrap: nowrap
+    &:focus,
+    &:hover,
+    &:active
+      text-decoration: none
+
+
+  hr
+    border-top: 0.1em solid $accent_transparent
+  .article_pic_block,
+  .article_descr_block
+    margin: 10px
 #footer
 	background-color: $third_color_transparent
 	font-size: 0.8em
+	padding-top: 20px
 	a
 		color: #333
 	a.socials_link
@@ -137,30 +231,35 @@ section#contacts
 	.col-footer
 		width: 49%
 		display: inline-block
-	a.form_callee_button
-		width: 60%
-		background-color: $accent_transparent
-		border: 1px solid $alt_font_color
+
+a.form_callee_button
+	width: 60%
+	background-color: $accent_transparent
+	border: 1px solid $alt_font_color
+	color: $alt_font_color !important
+	padding: 10px
+	display: block
+	margin: 10px auto
+	text-align: center
+	text-transform: uppercase
+	-webkit-transition: all 0.3s ease-in
+	-moz-transition: all 0.3s ease-in
+	-ms-transition: all 0.3s ease-in
+	-o-transition: all 0.3s ease-in
+	transition: all 0.3s ease-in
+	&:hover,
+	&:active,
+	&:focus
 		color: $alt_font_color
-		padding: 10px
-		display: block
-		margin: 10px auto
-		text-align: center
-		text-transform: uppercase
-		-webkit-transition: all 0.3s ease-in
-		-moz-transition: all 0.3s ease-in
-		-ms-transition: all 0.3s ease-in
-		-o-transition: all 0.3s ease-in
-		transition: all 0.3s ease-in
-		&:hover,
-		&:active,
-		&:focus
-			color: $alt_font_color
-			text-decoration: none
-		&:hover
-			color: $accent
-			background-color: $alt_font_color
-			border: 1px solid $accent
+		text-decoration: none
+	&:hover
+		color: $accent !important
+		background-color: $alt_font_color
+		border: 1px solid $accent
+	&.ask_button
+		width: 100%
+		margin-top: 15%
+
 
 
 

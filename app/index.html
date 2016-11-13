@@ -32,6 +32,7 @@
 	<script>
 		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
 		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+
 	</script>
 	<!-- Load Fonts CSS End -->
 
@@ -39,6 +40,7 @@
 	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
 	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
 	<script>loadCSS( "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", false, "all" );</script>
+	<script>loadCSS( "css/animate.css", false, "all" ); // AnimateCSS plugin</script>
 
 	<!-- Load Custom CSS End -->
 
@@ -46,16 +48,17 @@
 	<noscript>
 		<link rel="stylesheet" href="css/fonts.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 	</noscript>
 	<!-- Load Custom CSS Compiled without JS End -->
 
 	<!-- Custom Browsers Color Start -->
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content=" #0095DC">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content=" #0095DC">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content=" #0095DC">
 	<!-- Custom Browsers Color End -->
 
 </head>
@@ -117,7 +120,7 @@
 						<p>Представьтесь, пожалуйста</p>
 						<input type="text" placeholder="Ваше Имя" required/>
 						<p>Ваш контактный телефон</p>
-						<input type="tel" placeholder="+38(012)345-67-89" pattern=""/>
+						<input type="tel" placeholder="+38(012)345-67-89" />
 						<p>Ваш EMAIL</p>
 						<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="example@mail.ua" required/>
 						<button type="submit">Отправить</button>
@@ -132,7 +135,7 @@
 		<ul>
 			<li ><a class="active"  href="#main">Главная</a></li>
 			<li><a  href="#info">Информация о нас</a></li>
-			<li><a href="#services">Услуги и Цены</a></li>
+			<li><a href="#services">Услуги</a></li>
 			<li><a href="#result">Галерея</a></li>
 			<li><a href="/articles.html">Полезные статьи</a></li>
 			<li><a href="#contacts">Контакты</a></li>
@@ -156,7 +159,7 @@
 						<h2>Работаем с заботой о Вас</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
-
+					<a href="#" class="hidden animated zoomIn">Посмотреть примеры работ <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
 				</div>
 				<div class="col-md-4 table-cell">
 
@@ -166,7 +169,7 @@
 						<h2>Предоставляем гарантии на все работы</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
-
+					<a href="#" class="hidden animated zoomIn">Проверить сертификаты <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
 				</div>
 				<div class="col-md-4 table-cell">
 
@@ -176,7 +179,7 @@
 						<h2>Грандиозный опыт</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
-
+					<a href="#" class="hidden animated zoomIn">Прочесть рекомендации <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
 				</div>
 			</div>
 
@@ -204,7 +207,7 @@
 						<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
 						<div class="doc_description">
 							<div class="doc_description-wrapper">
-								<span class="doc_name">John Doe</span>
+								<span class="doc_name">Алексей Антоненко</span>
 								<hr>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur debitis earum excepturi, itaque iure molestiae mollitia ullam voluptas voluptatibus. Ad beatae est, explicabo fugit illo pariatur quaerat quasi quibusdam, reiciendis repudiandae sequi soluta, sunt tempore ullam unde. </p>
 							</div>
@@ -219,7 +222,7 @@
 						<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
 						<div class="doc_description">
 							<div class="doc_description-wrapper">
-								<span class="doc_name">John Doe</span>
+								<span class="doc_name">Юлия Антоненко</span>
 								<hr>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur debitis earum excepturi, itaque iure molestiae mollitia ullam voluptas voluptatibus. Ad beatae est, explicabo fugit illo pariatur quaerat quasi quibusdam, reiciendis repudiandae sequi soluta, sunt tempore ullam unde. </p>
 							</div>
@@ -347,26 +350,109 @@
 		</div>
 	</div>
 </section>
-<section id="price">
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+<section class="any_questions" >
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<img src="img/svg/info.svg" class="animated pulse" alt="Обратная связь">
+			</div>
+			<div class="col-sm-4">
+				<h3>Не нашли жулаемую услугу?</h3>
+				<p class="hidden-sm ">Свяжитесь с нами, и получите ответ! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tenetur.</p>
+			</div>
+			<div class="col-sm-2">
+				<img class="arrow hidden-xs" src="img/svg/next.svg" alt="Обратная связь">
+			</div>
+			<div class="col-sm-4">
+				<a href="#contact_form" class="form_callee_button ask_button">
+					Записаться на консультацию
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="photos" class="parallax-again" data-parallax="scroll" data-image-src="img/teeth.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Результаты наших работ</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur assumenda cumque cupiditate dolore esse eveniet hic impedit incidunt ipsam iure laborum molestias natus quaerat quam qui quo sequi similique sit, vero. Accusantium debitis delectus eligendi esse et expedita labore laudantium, minus, neque obcaecati quaerat quas, quo temporibus ut vero!</p>
+				<div class="img_wrapper">
+					<img src="img/works/3.jpg" alt="Процесс работы" width="30%" height="50%">
+					<img src="img/works/2.jpg" alt="Герметизация фиссур" width="60%" height="50%">
+					<img src="img/works/profilaktika-kariesa.jpg" alt="Профилактика кариеса" width="30%" height="50%">
+					<img src="img/works/4.jpg" alt="Отличный результат" width="60%" height="50%">
+				</div>
+				<a href="/gallery.html" class="form_callee_button">Посмотреть больше работ</a>
+			</div>
+		</div>
+	</div>
 </section>
 
 
-<section id="result">
-	<br>
-	<br>
-	<br><br><br><br><br>
+<section id="articles">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Это должен знать каждый</h2>
+			<p>Простые но полезные статьи и советы которые подготовили наши врачи с заботой о здоровье Ваших зубов! Не поленитесь потратить 5 минут, и обезопасить себя и своих близких от зубных недугов.</p>
+			<a class="article_block" href="#">
+				<div class="article_pic_block">
+					<img src="img/works/karies.jpg" alt="">
+				</div>
+				<div class="article_descr_block">
+					<h3>Налёт у ребёнка на зубах</h3><hr>
+					<p>Article short description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolores ducimus explicabo id in laboriosam magni nisi nostrum officia quasi, ut veniam, vero. Ad commodi fugiat mollitia optio voluptatibus.<a href="/nalet.html">Посмотреть статью полностью</a>
+						</p>
+				</div>
+			</a>
+
+			<a href="/articles.html" class="form_callee_button">Посмотреть больше работ</a>
+		</div>
+	</div>
+</div>
 </section>
 <section id="contacts">
-	<div class="map_wrapper">
-		<iframe class="external_gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1541.7740277659786!2d30.72943671734725!3d46.4857596936983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63195b8a1a38f%3A0x2bb83ed5705cce4e!2z0LLRg9C70LjRhtGPINCU0LLQvtGA0Y_QvdGB0YzQutCwLCA3LCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1478970678919"  frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
+	<iframe class="external_gmap hidden-sm hidden-xs"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4894.8201390118065!2d30.728017817485235!3d46.48583694465052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63195b8a1a38f%3A0x2bb83ed5705cce4e!2z0LLRg9C70LjRhtGPINCU0LLQvtGA0Y_QvdGB0YzQutCwLCA3LCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1479038969681"  frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="container">
+				<div class="our_contacts hidden-sm hidden-xs">
+					<div class="col-footer col-footer-left">
+						<div class="name"><strong>Алексей Антоненко</strong></div>
+						<div class="tel"><a href="tel:0673822754"><i class="fa fa-phone" aria-hidden="true"></i> (067)382-27-54</a><a href="tel:0487000026"> | (048)700-00-26</a></div>
+						<div class="name"><strong>Юлия Антоненко</strong></div>
+						<div class="tel"><a href="tel:0673822754"> <i class="fa fa-phone" aria-hidden="true"></i> (067)382-22-86</a><a href="tel:0487000026"> | (048)701-55-60  </a></div>
+					</div>
+					<div class="col-footer col-footer-right">
+
+						<div class="mail"><a href="mailto:Antonenko-dentroom@mail.ru"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@mail.ru</a></div>
+						<div class="working_hours"><i class="fa fa-clock-o" aria-hidden="true"></i>  ПН- ПТ: с 9-00 до 18-00 <br> СБ - ВС: по предварительной записи </div>
+						<div class="location"><a href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7 </a></div>
+					</div>
+				</div>
+
+			<div class="row">
+
+				<div class="col-md-7">
+					<div class="hidden-md hidden-lg" style="min-height: 300px; width: 95%">	<iframe class="external_gmap mobilemap"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4894.8201390118065!2d30.728017817485235!3d46.48583694465052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63195b8a1a38f%3A0x2bb83ed5705cce4e!2z0LLRg9C70LjRhtGPINCU0LLQvtGA0Y_QvdGB0YzQutCwLCA3LCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1479038969681"  frameborder="0" style="border:0" allowfullscreen></iframe></div>
+				</div>
+				<div class="col-md-5">
+					<form action="mail.php" id="contact_form">
+						<fieldset>
+							<div class="legend">Записаться на прием</div>
+							<p>Представьтесь, пожалуйста</p>
+							<input type="text" placeholder="Ваше Имя" required/>
+							<p>Ваш контактный телефон</p>
+							<input type="tel" placeholder="+38(012)345-67-89" />
+							<p>Ваш EMAIL</p>
+							<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="example@mail.ua" required/>
+							<p>Ваше сообщение</p>
+							<textarea name="" id="" cols="30" rows="4"></textarea>
+							<button type="submit">Отправить</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
 	<div class="contacts_over_map">
 
 	</div>
@@ -419,7 +505,7 @@
 					<div class="working_hours"><i class="fa fa-clock-o" aria-hidden="true"></i>  ПН- ПТ: с 9-00 до 18-00 <br> СБ - ВС: по предварительной записи </div>
 					<div class="location"><a href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7 </a></div>
 				</div>
-				<a href="#" class="form_callee_button">
+				<a href="#contact_form" class="form_callee_button">
 					Записаться на консультацию
 				</a>
 			</div>
@@ -428,6 +514,14 @@
 	<hr>
 	<div class="cprt">Copyright 2016. All rights reserved.</div>
 </footer>
+<div id="upslider" class="hidden-sm hidden-xs upslider hidden" width="50px" height="50px">
+	<a href="#main">
+		 <i class="fa fa-chevron-right" aria-hidden="true" style=""></i> <div>
+		Наверх
+	</div>
+	</a>
+</div>
+
 	<!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.min.js", "async" : false},

@@ -85,3 +85,28 @@ $(window).scroll(function() {
     }
 
 });
+
+
+$('.table-cell').hover(
+    function(){
+        $(this).find('a').removeClass("hidden");
+
+    },
+    function(){
+       $(this).find('a').addClass("hidden");
+} )
+
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+        $('#upslider').addClass("hidden");
+
+    } else {
+        $('#upslider').removeClass("hidden");
+
+    }
+    lastScrollTop = st;
+});
+
+

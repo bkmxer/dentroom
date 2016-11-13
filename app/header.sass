@@ -101,6 +101,7 @@ form[action="mail.php"]
   background-color: $third_color_transparent
   padding: 10px
   color: $default_font_color
+  box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px
   p
     width: 90%
     display: block
@@ -112,22 +113,43 @@ form[action="mail.php"]
     text-align: right
     margin-bottom: 20px
   input,
-  button
+  button,
+  textarea
     display: block
     width: 90%
     margin: 10px auto
     padding: 10px 15px
+  textarea
+    resize: none
   input
     color: #666
     &::placeholder
       color: #999
   button
-    background-color: $accent
-    color: $alt_font_color
+    width: 90%
+    background-color: $accent_transparent
+    border: 1px solid $alt_font_color
+    color: $alt_font_color !important
+    padding: 10px
+    display: block
+    margin: 10px auto
+    text-align: center
     text-transform: uppercase
-    border: 0
-    margin-top: 20px
-    padding: 15px 25px
+    -webkit-transition: all 0.3s ease-in
+    -moz-transition: all 0.3s ease-in
+    -ms-transition: all 0.3s ease-in
+    -o-transition: all 0.3s ease-in
+    transition: all 0.3s ease-in
+    &:hover,
+    &:active,
+    &:focus
+      color: $alt_font_color
+      text-decoration: none
+    &:hover
+      color: $accent !important
+      background-color: $alt_font_color
+      border: 1px solid $accent
+
 section.aboutUs
   //background-image: url("img/bg-room.jpeg")
   //-webkit-background-size: cover
@@ -144,7 +166,25 @@ section.aboutUs
    img
      width: 30%
      display: block
-
+#upslider
+  position: fixed
+  left: 0
+  top: 80%
+  background-color: rgba(255,255,255,.3)
+  padding: 5px
+  a
+    &:hover,
+    &:focus,
+    &active
+      text-decoration: none
+  i
+    font-size: 3em
+    display: block
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    -ms-transform: rotate(-90deg)
+    -o-transform: rotate(-90deg)
+    transform: rotate(-90deg)
     
 
 
