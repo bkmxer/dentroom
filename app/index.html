@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Antonenko-Dentrom</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,10 @@
 	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
 	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
 	<script>loadCSS( "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", false, "all" );</script>
-	<script>loadCSS( "css/animate.css", false, "all" ); // AnimateCSS plugin</script>
+	<script>loadCSS( "css/jquery.fancybox.css", false, "all" ); // fancybox plugin</script>
+	<script>loadCSS( "css/aos.css", false, "all" ); // animate on scroll plugin</script>
+
+
 
 	<!-- Load Custom CSS End -->
 
@@ -48,7 +51,8 @@
 	<noscript>
 		<link rel="stylesheet" href="css/fonts.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
-		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/aos.css">
 	</noscript>
 	<!-- Load Custom CSS Compiled without JS End -->
 
@@ -64,6 +68,19 @@
 </head>
 
 <body>
+<div class="preloader">
+	<div class='preloader-dotline'>
+		<div class='dot'></div>
+		<div class='dot'></div>
+		<div class='dot'></div>
+		<div class='dot'></div>
+		<div class='dot'></div>
+		<div class='dot'></div>
+		<div class='dot'></div>
+		<div class='dot'></div>
+	</div>
+	<img src="img/Logo_white.png" alt="#" style="width: 20%; display: block; margin: auto; left: 35%; right: 35%; top: 35%; bottom: 35%;  position: absolute;" />
+</div>
 
 	<!-- Custom HTML -->
 <header class="header" id="main">
@@ -74,8 +91,8 @@
 				<div class="doctor left_doc">
 					<div class="name"><strong>Алексей Антоненко</strong></div>
 					<div class="tel"><a href="tel:0673822754"><i class="fa fa-phone" aria-hidden="true"></i> (067)382-27-54</a><a href="tel:0487000026"> | (048)700-00-26</a></div>
-					<div class="mail"><a href="mailto:Antonenko-dentroom@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@mail.ru</a></div>
-					<div class="working_hours"> <i class="fa fa-clock-o" aria-hidden="true"></i> ПН- ПТ: с 9-00 до 18-00 <br> СБ - ВС: по предварительной записи</div>
+					<div class="mail"><a href="mailto:Antonenko-dentroom@ukr.net"><i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@ukr.net</a></div>
+					<div class="working_hours"> <i class="fa fa-clock-o" aria-hidden="true"></i> ПН- ПТ: с 9-00 до 18-00 <br><div style="height:10px; width: 11%; display: inline-block;"></div> СБ - ВС: по предварительной записи</div>
 					<div class="location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7</a></div>
 
 				</div>
@@ -89,8 +106,8 @@
 				<div class="doctor right_doc">
 					<div class="name"><strong>Юлия Антоненко</strong></div>
 					<div class="tel"><a href="tel:0673822754"> (067)382-22-86</a><a href="tel:0487000026"> | (048)701-55-60  <i class="fa fa-phone" aria-hidden="true"></i></a></div>
-					<div class="mail"><a href="mailto:Antonenko-dentroom@mail.ru"> Antonenko-dentroom@mail.ru <i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
-					<div class="working_hours">  ПН- ПТ: с 9-00 до 18-00 <i class="fa fa-clock-o" aria-hidden="true"></i><br> СБ - ВС: по предварительной записи </div>
+					<div class="mail"><a href="mailto:Antonenko-dentroom@ukr.net"> Antonenko-dentroom@ukr.net <i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+					<div class="working_hours">  ПН- ПТ: с 9-00 до 18-00 <i class="fa fa-clock-o" aria-hidden="true"></i><br> СБ - ВС: по предварительной записи <div style="height:10px; width: 11%; display: inline-block;"></div></div>
 					<div class="location"><a href="#"> Дворянская, 7 <i class="fa fa-map-marker" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
@@ -104,17 +121,16 @@
 </div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-sm-6">
 				<div class="left-side-wrapper">
-					<h1>Стоматологический кабинет Антоненко</h1>
+					<h1><span style="color: #333;" >Стоматологический кабинет</span><br><b> ANTONENKO-DENTROOM</b></h1>
 
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam labore laboriosam, nisi officiis perspiciatis sunt? Aspernatur, eveniet minus? Explicabo, nobis.
+					<p>Многолетний опыт и забота о пациентах совместно с современными европейскими технологиями избавят вас от страхов перед стоматологами навсегда
 					</p>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<form action="mail.php">
+			<div class="col-sm-6">
+				<form action="mail.php" class="">
 					<fieldset>
 						<div class="legend">Записаться на прием</div>
 						<p>Представьтесь, пожалуйста</p>
@@ -130,14 +146,19 @@
 		</div>
 	</div>
 </header>
-	<nav class="nav-underline fixed_head">
-		<a href="#" class="menu-trigger hidden-desktop">Menu</a>
-		<ul>
+	<nav class="nav-underline fixed_head" >
+		<a href="#" class="menu-trigger hidden-desktop"> <img src="img/Logo_white.png" alt="Antonenko-dentroom">
+
+			<div class="hamburger-menu ">
+				<div class="bar"></div>
+			</div>
+		</a>
+		<ul >
 			<li ><a class="active"  href="#main">Главная</a></li>
 			<li><a  href="#info">Информация о нас</a></li>
 			<li><a href="#services">Услуги</a></li>
-			<li><a href="#result">Галерея</a></li>
-			<li><a href="/articles.html">Полезные статьи</a></li>
+			<li><a href="gallery.html">Галерея</a></li>
+			<li><a href="articles.html">Полезные статьи</a></li>
 			<li><a href="#contacts">Контакты</a></li>
 		</ul>
 	</nav>
@@ -145,41 +166,44 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptatibus.</h1>
-					<p class="centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, assumenda enim esse similique temporibus voluptatum. A aliquid amet assumenda cum deleniti dignissimos dolor dolores earum eos, eum ex explicabo fuga id, incidunt iusto labore libero minima nesciunt nobis non obcaecati odit officia officiis omnis porro quisquam quod repudiandae sed sit?</p>
+					<h1 data-aos="fade-down" data-aos-once="true">Почему стоит выбрать нас?</h1>
+					<p class="centered">Стоматологический кабинет «Antonenko-Dentroom» (Одесса) открылся в 2010 году. За эти годы пройден большой путь, накопленно много знаний, кабинет был оснащен современными технологиями. Наши пациенты получают лечение европейского уровня по приятным ценам.</p>
 				</div>
 			</div>
 			<div class="row table-row">
-				<div class="col-md-4 table-cell">
+				<div class="col-sm-4 table-cell" data-aos="fade-right" data-aos-once="true" data-aos-delay="0">
 
 						<div class="advantage_icon">
-							<img src="img/svg/heart.svg" alt="Работает с заботой о Вас" style="width: 30%; height: 30%">
+							<img src="img/svg/heart.svg" alt="Работает с заботой о Вас" style="max-width: 15%; max-height: 15%">
 
 						</div>
-						<h2>Работаем с заботой о Вас</h2>
+						<h2>мы Заботимся о Вас</h2>
+					<hr>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
-					<a href="#" class="hidden animated zoomIn">Посмотреть примеры работ <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
+					<a href="gallery.html" class=" ">Посмотреть результаты работ <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
 				</div>
-				<div class="col-md-4 table-cell">
+				<div class="col-sm-4 table-cell" data-aos="fade-right" data-aos-once="true" data-aos-delay="200">
 
 						<div class="advantage_icon">
-							<img src="img/svg/checked.svg" alt="Предоставляем гарантии на все работы" style="width: 30%; height: 30%">
+							<img src="img/svg/checked.svg" alt="Предоставляем гарантии на все работы" style="max-width: 15%; max-height: 15%">
 						</div>
-						<h2>Предоставляем гарантии на все работы</h2>
+						<h2>гарантии на работы</h2>
+					<hr>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
-					<a href="#" class="hidden animated zoomIn">Проверить сертификаты <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
+					<a href="#" class=" ">Посмотреть виды услуг <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
 				</div>
-				<div class="col-md-4 table-cell">
+				<div class="col-sm-4 table-cell"  data-aos="fade-right" data-aos-once="true" data-aos-delay="400">
 
 						<div class="advantage_icon">
-							<img src="img/svg/mortarboard.svg" alt="Долгие годы опыта" style="width: 30%; height: 30%">
+							<img src="img/svg/mortarboard.svg" alt="Долгие годы опыта" style="max-width: 15%; max-height: 15%">
 						</div>
 						<h2>Грандиозный опыт</h2>
+					<hr>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate dignissimos dolorum esse est expedita incidunt iure necessitatibus, omnis pariatur quasi sed, voluptas? Accusantium cupiditate dicta eaque, eum mollitia vero?
 						</p>
-					<a href="#" class="hidden animated zoomIn">Прочесть рекомендации <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
+					<a href="articles.html" class=" ">Прочесть рекомендации <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
 				</div>
 			</div>
 
@@ -191,44 +215,40 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="sect_descr">
-						<h1>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						<h1  data-aos="fade-down" data-aos-once="true">
+							НАШИ ПРОФЕССИОНАЛЫ
 						</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid assumenda blanditiis consequatur corporis dolorem, eaque error esse excepturi, expedita explicabo facere illo iste nihil optio rem vel veritatis vero?
+Наши врачи имеют найвыший уровень квалификации, многолетний опыт и знания, благодаря чему Вы можете перестать беспокоиться и боятся, доверьте здоровье Ваших зубов  профессионалам!
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-2 hidden-sm hidden-xs"></div>
+				<div class="col-sm-6 col-md-4">
+					<div class="doc_wrapper">
+						<img src="img/doctor-1.jpg" alt="Алексей Антоненко">
+						<div class="description_wrap">
+						<span class="doc_name">Алексей Антоненко</span>
+						<hr>
+						<p>Специалист эксперт-класса в эстетической и высокохудожественной стоматологии и детской стоматологии</p>
+					</div>
+			</div></div>
+				<div class="col-sm-6 col-md-4"><div class="doc_wrapper">
+					<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
+						<div class="description_wrap">
 
-					<div class="doc_photo_block">
-						<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
-						<div class="doc_description">
-							<div class="doc_description-wrapper">
-								<span class="doc_name">Алексей Антоненко</span>
-								<hr>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur debitis earum excepturi, itaque iure molestiae mollitia ullam voluptas voluptatibus. Ad beatae est, explicabo fugit illo pariatur quaerat quasi quibusdam, reiciendis repudiandae sequi soluta, sunt tempore ullam unde. </p>
-							</div>
+							<span class="doc_name">Юлия Антоненко</span>
+							<hr>
+							<p>стоматолог-хирург, специалист в дентальной имплантации и костной пластике <br>Дентальная имплантация.</p>
 						</div>
 					</div>
+				</div>
 
 
-			</div>
-				<div class="col-md-6">
-
-					<div class="doc_photo_block">
-						<img src="img/doctor-2.jpg" alt="Алексей Антоненко">
-						<div class="doc_description">
-							<div class="doc_description-wrapper">
-								<span class="doc_name">Юлия Антоненко</span>
-								<hr>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur debitis earum excepturi, itaque iure molestiae mollitia ullam voluptas voluptatibus. Ad beatae est, explicabo fugit illo pariatur quaerat quasi quibusdam, reiciendis repudiandae sequi soluta, sunt tempore ullam unde. </p>
-							</div>
-						</div>
-					</div>
-
+				</div>
+				<div class="col-md-2 hidden-sm hidden-xs">
 
 				</div>
 			</div>
@@ -237,112 +257,121 @@
 <section id="services" data-parallax="scroll" data-image-src="img/dental_smile.jpg">
 	<div class="container">
 		<div class="row">
-			<div class="">
+			<div class="col-xs-12">
+				<div class="sect_descr">
+					<h1  data-aos="fade-down" data-aos-once="true">
+						НАШи услуги
+					</h1>
+
+				</div>
+			</div>
+			<div class="col-xs-12">
 				<div class="flex-services_wrapper">
-					<div class="service_box">
+
+					<div class="service_box" data-aos="flip-up" data-aos-once="true">
 						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+							<img src="img/gallery/thumbs/gallery_ourwork5.jpg" alt="Детская стоматология" style="max-width: 100%;">
 						</div>
 						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
+							<h3 class="service_name">
+								Классическая стоматология и профилактика
+							</h3>
+
 						</div>
+						<ul class="service_descr ">
+							<li>Лечение кариеса</li>
+							<li>Лечение корневых каналов</li>
+							<li>Реставрация зуба</li>
+							<li>Общие рекомендации по оздоровлению зубов</li>
+
+						</ul>
 					</div>
-					<div class="service_box">
+					<div class="service_box" data-aos="flip-up" data-aos-once="true" data-aos-delay="100">
 						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+							<img src="img/gallery/thumbs/gallery_ourwork4.jpg" alt="Детская стоматология" style="max-width: 100%;">
 						</div>
 						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
+							<h3 class="service_name">
+								Косметические решения
+							</h3>
+
 						</div>
+						<ul class="service_descr ">
+							<li>Отбеливание зубов</li>
+							<li>Реконструкция зуба</li>
+							<li>Исправление формы зуба</li>
+
+						</ul>
 					</div>
-					<div class="service_box">
+					<div class="service_box" data-aos="flip-up" data-aos-once="true" data-aos-delay="200">
 						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+							<img src="img/gallery/thumbs/gallery_profilactica1.jpg" alt="Детская стоматология" style="max-width: 100%;">
 						</div>
 						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
+							<h3 class="service_name">
+								Детская стоматология
+							</h3>
+
 						</div>
+						<ul class="service_descr ">
+							<li> Профилактика кариеса</li>
+							<li> Лечение молочных зубов</li>
+							<li> Лечение постоянных зубов</li>
+							<li> Удаление молочных зубов</li>
+
+						</ul>
 					</div>
-					<div class="service_box">
+					<div class="service_box" data-aos="flip-up" data-aos-once="true">
 						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+							<img src="img/gallery/thumbs/gallery_ourwork3.jpg" alt="Профессиональная гигиена полости рта" style="max-width: 100%;">
 						</div>
 						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
+							<h3 class="service_name">
+								Гигиена полости рта
+							</h3>
+
 						</div>
+						<ul class="service_descr ">
+							<li>Профессиональная чистка зубов</li>
+							<li>Рекомендацию касательно индивидуальных особенностей гигиены полости рта</li>
+
+						</ul>
 					</div>
-					<div class="service_box">
+					<div class="service_box" data-aos="flip-up" data-aos-once="true" data-aos-delay="100">
 						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+							<img src="img/gallery/thumbs/orth.jpg" alt="Детская дентология" style="max-width: 100%;">
 						</div>
 						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
+							<h3 class="service_name">
+								ОРТОПЕДИЧНА СТОМАТОЛОГІЯ
+							</h3>
+
 						</div>
+						<ul class="service_descr ">
+							<li>Изготовление коронок</li>
+							<li>Установка коронок</li>
+							<li>Подбор протезов</li>
+							<li>Подбор и установка виниров</li>
+						</ul>
 					</div>
-					<div class="service_box">
+					<div class="service_box" data-aos="flip-up" data-aos-once="true" data-aos-delay="200">
 						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
+							<img src="img/gallery/thumbs/rentget.jpg" alt="Детская дентология" style="max-width: 100%;">
 						</div>
 						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
+							<h3 class="service_name">
+								Хирургическое лечение
+							</h3>
+
 						</div>
+						<ul class="service_descr ">
+							<li>Удаление зубов </li>
+							<li>Пластика уздечек</li>
+							<li>Имплантация</li>
+							<li>Восстановление зубного ряда</li>
+						</ul>
 					</div>
-					<div class="service_box">
-						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
-						</div>
-						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
-						</div>
-					</div>
-					<div class="service_box">
-						<div class="service_img">
-							<img src="img/svg/teeth.svg" alt="Детская дентология" style="width: 100px; height: 100px;">
-						</div>
-						<div class="service_description">
-							<h2 class="service_name">
-								Детская дентология
-							</h2>
-							<p class="service_descr">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis doloremque expedita hic, molestiae obcaecati placeat quis sequi totam ullam!
-							</p>
-						</div>
-					</div>
+
 
 
 				</div>
@@ -354,11 +383,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
-				<img src="img/svg/info.svg" class="animated pulse" alt="Обратная связь">
+				<img src="img/svg/info.svg" class="" alt="Обратная связь">
 			</div>
 			<div class="col-sm-4">
-				<h3>Не нашли жулаемую услугу?</h3>
-				<p class="hidden-sm ">Свяжитесь с нами, и получите ответ! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, tenetur.</p>
+				<h3>Не нашли желаемую услугу?</h3>
+				<p class="hidden-sm ">Свяжитесь с нами, и получите ответ! Мы делаем все возможное что бы ответить Вам максимально быстро и информативно!</p>
 			</div>
 			<div class="col-sm-2">
 				<img class="arrow hidden-xs" src="img/svg/next.svg" alt="Обратная связь">
@@ -374,46 +403,126 @@
 <section id="photos" class="parallax-again" data-parallax="scroll" data-image-src="img/teeth.jpg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h2>Результаты наших работ</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur assumenda cumque cupiditate dolore esse eveniet hic impedit incidunt ipsam iure laborum molestias natus quaerat quam qui quo sequi similique sit, vero. Accusantium debitis delectus eligendi esse et expedita labore laudantium, minus, neque obcaecati quaerat quas, quo temporibus ut vero!</p>
-				<div class="img_wrapper">
-					<img src="img/works/3.jpg" alt="Процесс работы" width="30%" height="50%">
-					<img src="img/works/2.jpg" alt="Герметизация фиссур" width="60%" height="50%">
-					<img src="img/works/profilaktika-kariesa.jpg" alt="Профилактика кариеса" width="30%" height="50%">
-					<img src="img/works/4.jpg" alt="Отличный результат" width="60%" height="50%">
-				</div>
-				<a href="/gallery.html" class="form_callee_button">Посмотреть больше работ</a>
+			<div class="col-xs-12">
+				<h2 data-aos="fade-down" data-aos-once="true">Результаты наших работ</h2>
+				<p>Мы делимся с Вами фотографиями с процессами нашей работы и её результатами. Хотите больше? Пройдите в галерею!</p>
+
+</div>
+			<div class="col-sm-3">
+
+				<a class="object_wrapper fancybox-effects-a"  data-aos="fade-up" data-aos-delay="0" data-aos-once="true" href="img/gallery/gallery_ourwork2.jpg" data-fancybox-group="gallery" title="ПРОФЕССИОНАЛЬНАЯ ГИГИЕНА ПОЛОСТИ РТА
+">
+					<img src="img/gallery/thumbs/gallery_ourwork2.jpg" alt="">
+					<div class="photo_description">Профессиональная гигиена полости рта
+
+					</div>
+				</a>
 			</div>
-		</div>
+			<div class="col-sm-3">
+
+				<a class="object_wrapper fancybox-effects-a" data-aos="fade-up" data-aos-delay="100" data-aos-once="true" href="img/gallery/gallery_ourwork3.jpg" data-fancybox-group="gallery" title="Процесс работы врача-стоматолога">
+					<img src="img/gallery/thumbs/gallery_ourwork3.jpg" alt="">
+					<div class="photo_description">Процесс работы врача-стоматолога
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3">
+
+				<a class="object_wrapper fancybox-effects-a" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" href="img/gallery/gallery_ourwork4.jpg" data-fancybox-group="gallery" title="Процесс работы врача-стоматолога">
+					<img src="img/gallery/thumbs/gallery_ourwork4.jpg" alt="">
+					<div class="photo_description">Процесс работы врача-стоматолога
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-3">
+
+				<a class="object_wrapper fancybox-effects-a" data-aos="fade-up" data-aos-delay="300" data-aos-once="true" href="img/gallery/gallery_ourwork5.jpg" data-fancybox-group="gallery" title="Процесс работы врача-стоматолога">
+					<img src="img/gallery/thumbs/gallery_ourwork5.jpg" alt="">
+					<div class="photo_description">Процесс работы врача-стоматолога
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12">
+				<a href="articles.html" class="form_callee_button" title="Перейти в галерею">Посмотреть больше фото</a>
+			</div>
+
+			</div>
+
 	</div>
 </section>
 
 
-<section id="articles">
+<section id="articles" class="articles--onmain">
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<h2>Это должен знать каждый</h2>
+		<div class="col-xs-12">
+			<h1  data-aos="fade-down" data-aos-once="true">Это должен знать каждый</h1>
 			<p>Простые но полезные статьи и советы которые подготовили наши врачи с заботой о здоровье Ваших зубов! Не поленитесь потратить 5 минут, и обезопасить себя и своих близких от зубных недугов.</p>
+		</div>
+		<div class="col-sm-4">
 			<a class="article_block" href="#">
 				<div class="article_pic_block">
-					<img src="img/works/karies.jpg" alt="">
+					<img src="img/articles/reminiralization.png" alt="">
 				</div>
 				<div class="article_descr_block">
-					<h3>Налёт у ребёнка на зубах</h3><hr>
-					<p>Article short description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolores ducimus explicabo id in laboriosam magni nisi nostrum officia quasi, ut veniam, vero. Ad commodi fugiat mollitia optio voluptatibus.<a href="/nalet.html">Посмотреть статью полностью</a>
-						</p>
+					<h2>реминерализация зубов</h2>
+					<p class="crumbs">
+
+					</p>
+					<p>Повышенная чувствительность эмали, появление трещин на зубах, возникновение кариеса – все эти неприятные явления возникают в результате вымывания из эмали минералов и других микроэлементов. Для восстановления зуба проводится реминерализации эмали.
+						<br>
+
+					</p>
 				</div>
 			</a>
+		</div>
+		<div class="col-sm-4">
+			<a class="article_block" href="#">
+				<div class="article_pic_block">
+					<img src="img/articles/Ftor.png" alt="">
+				</div>
+				<div class="article_descr_block">
+					<h2>Фторирование зубов</h2>
+					<p class="crumbs">
 
-			<a href="/articles.html" class="form_callee_button">Посмотреть больше работ</a>
+					</p>
+					<p>Очень часто на осмотре у стоматолога мы слышим фразу: «Давайте по-фторируем зубы, они станут более устойчивые к возникновению кариеса» Но как понять, это «бизнес-программа» такая,  или действительно это полезно для здоровья.
+						<br> Разберёмся! Спешу успокоить, что да, это действительно полезно. Но есть и «Но…»
+
+						<br>
+
+					</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-sm-4">
+			<a class="article_block" href="#">
+				<div class="article_pic_block">
+					<img src="img/articles/pregrant.png" alt="">
+				</div>
+				<div class="article_descr_block">
+					<h2>О стоматологии для беременных</h2>
+					<p class="crumbs">
+
+					</p>
+					<p>В период ожидания ребенка каждый фактор жизнедеятельности будущей мамы напрямую и непосредственно влияет на ребенка. Так, о появлении проблем с зубами, важно знать, опасно ли посещение стоматолога для ребенка?
+						<br>
+
+					</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-12">
+			<a href="articles.html" class="form_callee_button">Посмотреть все статьи</a>
 		</div>
 	</div>
 </div>
 </section>
 <section id="contacts">
-	<iframe class="external_gmap hidden-sm hidden-xs"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4894.8201390118065!2d30.728017817485235!3d46.48583694465052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63195b8a1a38f%3A0x2bb83ed5705cce4e!2z0LLRg9C70LjRhtGPINCU0LLQvtGA0Y_QvdGB0YzQutCwLCA3LCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1479038969681"  frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div class="external_gmap hidden-sm hidden-xs" id="map">
+
+	</div>
 		<div class="container">
 				<div class="our_contacts hidden-sm hidden-xs">
 					<div class="col-footer col-footer-left">
@@ -424,7 +533,7 @@
 					</div>
 					<div class="col-footer col-footer-right">
 
-						<div class="mail"><a href="mailto:Antonenko-dentroom@mail.ru"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@mail.ru</a></div>
+						<div class="mail"><a href="mailto:Antonenko-dentroom@ukr.net"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@ukr.net</a></div>
 						<div class="working_hours"><i class="fa fa-clock-o" aria-hidden="true"></i>  ПН- ПТ: с 9-00 до 18-00 <br> СБ - ВС: по предварительной записи </div>
 						<div class="location"><a href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7 </a></div>
 					</div>
@@ -433,7 +542,7 @@
 			<div class="row">
 
 				<div class="col-md-7">
-					<div class="hidden-md hidden-lg" style="min-height: 300px; width: 95%">	<iframe class="external_gmap mobilemap"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4894.8201390118065!2d30.728017817485235!3d46.48583694465052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63195b8a1a38f%3A0x2bb83ed5705cce4e!2z0LLRg9C70LjRhtGPINCU0LLQvtGA0Y_QvdGB0YzQutCwLCA3LCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1479038969681"  frameborder="0" style="border:0" allowfullscreen></iframe></div>
+					<div class="hidden-md hidden-lg" style="min-height: 300px; width: 95%">	<div class="external_gmap mobilemap" id="map_map"></div></div>
 				</div>
 				<div class="col-md-5">
 					<form action="mail.php" id="contact_form">
@@ -446,7 +555,7 @@
 							<p>Ваш EMAIL</p>
 							<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="example@mail.ua" required/>
 							<p>Ваше сообщение</p>
-							<textarea name="" id="" cols="30" rows="4"></textarea>
+							<textarea name="" id="" cols="30" rows="4" placeholder="Задайте Ваш вопрос.."></textarea>
 							<button type="submit">Отправить</button>
 						</fieldset>
 					</form>
@@ -461,8 +570,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
-				<h2>О Компании</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aspernatur facere laborum molestiae nam praesentium, quia quisquam repellat ut!	</p>
+				<h2>О Нас</h2>
+				<p>Стоматологический кабинет основам врачами Юлией и Алексеем Антоненко. Находится по адрессу Дворянская 7, и уже более 5 лет успешно помогает своим клиентам</p>
 				<div class="socials">
 					<a href="#" class="socials_link">
 						<i class="fa fa-vk" aria-hidden="true"></i>
@@ -480,12 +589,12 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<h2>Навигация</h2>
-				<ul>
+				<ul class="bottom_links">
 					<li ><a class="active"  href="#main">Главная</a></li>
 					<li><a  href="#info">Информация о нас</a></li>
-					<li><a href="#services">Услуги и Цены</a></li>
-					<li><a href="#result">Галерея</a></li>
-					<li><a href="/articles.html">Полезные статьи</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="gallery.html">Галерея</a></li>
+					<li><a href="articles.html">Полезные статьи</a></li>
 					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</div>
@@ -494,14 +603,14 @@
 					<div class="col-footer col-footer-left">
 						<div class="name"><strong>Алексей Антоненко</strong></div>
 						<div class="tel"><a href="tel:0673822754"><i class="fa fa-phone" aria-hidden="true"></i> (067)382-27-54</a><a href="tel:0487000026"> | (048)700-00-26</a></div>
-						<div class="mail"><a href="mailto:Antonenko-dentroom@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@mail.ru</a></div>
+						<div class="mail"><a href="mailto:Antonenko-dentroom@ukr.net"><i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@ukr.net</a></div>
 						<div class="working_hours"> <i class="fa fa-clock-o" aria-hidden="true"></i> ПН- ПТ: с 9-00 до 18-00 <br> СБ - ВС: по предварительной записи</div>
 						<div class="location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7</a></div>
 					</div>
 				<div class="col-footer col-footer-right">
 					<div class="name"><strong>Юлия Антоненко</strong></div>
 					<div class="tel"><a href="tel:0673822754"> <i class="fa fa-phone" aria-hidden="true"></i> (067)382-22-86</a><a href="tel:0487000026"> | (048)701-55-60  </a></div>
-					<div class="mail"><a href="mailto:Antonenko-dentroom@mail.ru"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@mail.ru</a></div>
+					<div class="mail"><a href="mailto:Antonenko-dentroom@ukr.net"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Antonenko-dentroom@ukr.net</a></div>
 					<div class="working_hours"><i class="fa fa-clock-o" aria-hidden="true"></i>  ПН- ПТ: с 9-00 до 18-00 <br> СБ - ВС: по предварительной записи </div>
 					<div class="location"><a href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> Дворянская, 7 </a></div>
 				</div>
@@ -512,23 +621,48 @@
 		</div>
 	</div>
 	<hr>
-	<div class="cprt">Copyright 2016. All rights reserved.</div>
+	<div class="cprt">Copyright 2016 &copy All rights reserved.</div>
 </footer>
-<div id="upslider" class="hidden-sm hidden-xs upslider hidden" width="50px" height="50px">
+<div id="upslider" class=" upslider hidden" width="50px" height="50px">
 	<a href="#main">
-		 <i class="fa fa-chevron-right" aria-hidden="true" style=""></i> <div>
-		Наверх
-	</div>
+		<img src="img/svg/upload.svg" alt="Вверх!" style="width: 1em; height: 1em; display: block; margin: auto;">
+
 	</a>
 </div>
 
 	<!-- Optimized loading JS Start -->
-	<script>var scr = {"scripts":[
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAnuTUv-ZMoyZ7pw1bNiJbgbYehAjp7gQ&callback=initMap"></script>
+	<script>
+		var scr = {"scripts":[
 		{"src" : "js/libs.min.js", "async" : false},
 		{"src" : "js/common.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
-	<!-- Optimized loading JS End -->
+<script type="text/javascript">
+	var map, map2;
+
+	function initMap() {
+		// create the maps
+		var myOptions = {
+			zoom: 18,
+			center: {lat: 46.485916, lng: 30.730919}
+		}
+		map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+		map2 = new google.maps.Map(document.getElementById("map_map"), myOptions);
+
+		var marker = new google.maps.Marker({
+			position: {lat: 46.485890 , lng: 30.730403},
+			map: map
+		});
+		var marker2 = new google.maps.Marker({
+			position:  {lat: 46.485890 , lng: 30.730403},
+			map: map2
+		});
+	}
+</script>
+<!-- Optimized loading JS End -->
 
 </body>
 </html>

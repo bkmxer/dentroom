@@ -6,17 +6,37 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
   /**/
-
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+  section#services
+    .service_box
+      ul.service_descr
+        display: none !important
+  section#services
+    .service_box
+      h3.service_name
+        font-size: 0.8em
+        letter-spacing: 0
+  section.aboutUs
+    .table-cell
+      h2
+        font-size: 1.3em
+  section#articles
+    &.articles--onmain
+      h2
+        font-size: 1em
+      a.article_block
+        color: $default-font-color
+        text-align: left
+
   .left-side-wrapper
-    margin-top: 0
+    margin-top: 200px
+    h1
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
   .row.table-row
     div[class*="col-"].table-cell
       margin-bottom: 20px
       text-align: center
-      border: 10px solid $accent
       img
         display: block
         margin: 0 auto
@@ -26,22 +46,41 @@
       margin-top: 5%
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
+  section.doctors
+    .doc_wrapper
+
+      max-width: 60%
+      display: block
+      margin: 0 auto
+
+  header
+    h1
+      letter-spacing: 0
+      font-size: 1.6em
+  form[action="mail.php"]
+    .legend
+      font-size: 1.1em
+    input,
+    button,
+    textarea
+      display: block
+      width: 100%
+      margin: 10px auto
+      padding: 10px 15px
+      border: 1px solid lighten($accent, 10%)
   nav
     li
       display: block
       text-align: center
     a
-      border-bottom: 3px solid #B24133
+      border-bottom: 3px solid darken($accent, 10%)
       padding-bottom: 15px
     ul
       display: none
   .hidden-desktop
     display: block
   section.any_questions
-    img
-      width: 20%
-      height: 20%
       &.arrow
         -webkit-transform: rotate(90deg)
         -moz-transform: rotate(90deg)
@@ -53,6 +92,46 @@
       margin-top: 0
   section#contacts
     background-color: lighten( $accent_transparent, 40%)
+  section#services
+    .service_box
+      h3
+        font-size: 0.8em
+
+@media  only screen and (max-width : 900px)
+  header.header
+    background-image: url('../img/tablet_header.jpg')
+  nav
+    li
+      a
+        padding: 1.2em 0.7em
+@media only screen and (max-width: 520px)
+  section.doctors
+    .doc_wrapper
+      max-width: 90%;
+@media only screen and (max-width: 767px)
+  section.doctors
+    .doc_wrapper
+      margin-bottom: 20px
+      img
+        margin-top: 20px
+
+@media only screen and (max-width : 767px)
+  section.any_questions
+    img
+      width: 20%
+      height: 20%
+  #footer
+    ul.bottom_links
+      display: flex
+      list-style: none
+      flex-wrap: wrap
+      padding: 0
+      justify-content: center
+      li
+        margin: 0.5em 5%
+        a
+          text-transform: uppercase
+          font-weight: bold
 
 @media only screen and (max-width : 579px)
   section#services
@@ -63,6 +142,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
   #footer
     .col-footer
       width: 100%
@@ -71,8 +151,8 @@
         margin-top: 15px
     a.form_callee_button
       width: 90%
-
-
+  header.header
+    background-image: url('../img/mob_header.jpg')
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -96,12 +176,11 @@
 @media only screen and (min-width : 992px)
   .row.table-row
     display: table
-    border-spacing: 20px
+    border-spacing: 0
     div[class*="col-"].table-cell
       float: none
       display: table-cell
       vertical-align: top
-      border: 3px solid $accent
       padding: 20px
 
 

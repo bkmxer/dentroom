@@ -31,61 +31,90 @@ body
 	line-height: 1.6
 	font-family: $default-font
 	overflow-x: hidden
+section.doctors
+  p
+    text-align: center
+  .doc_wrapper
+    position: relative
+    p, span, hr
+      z-index: 10
+    p
+      margin: 5px auto
+    hr
+      border-color: $accent
+      width: 90%
+      margin: 5px 0
+      display: block
+      margin: 0 auto
+    span
+      text-align: center
+      font-size: 1.6em
+      text-transform: uppercase
+      color: $accent
+      font-weight: normal
+      line-height: 1em
+      padding: 5px
+      margin-top: 5px
+      display: block
+    img
+      width: 100%
+    .description_wrap
+      background-color: rgba(255,255,255,0.8)
+      position: absolute
+      bottom: 0
 
+section.aboutUs
+	//background-image: url("img/bg-room.jpeg")
+	//-webkit-background-size: cover
+	background-color: rgba(255, 255, 255, .8)
+	background-blend-mode: screen
+	background-size: cover
+	padding-bottom: 50px
+	p.centered
+		text-align: center
+		img
+			border-bottom: 30px solid $accent
+	.advantage_icon
+		img
+			width: 15%
+			float: left
+			margin-right: 1em
+	h2
+		font-size: 1.5em
+		margin-top: 0
+		color: #fff
 .row.table-row
 	div[class*="col-"].table-cell
-		border: 3px solid $accent
+		background-color: lighten($accent, 10%)
+		border: none
 		padding: 20px
+		color: $alt_font_color
+		&:nth-child(2)
+			background-color: lighten($accent, 30%)
+			&:hover
+				background-color: lighten($accent_transparent, 30%)
 		a
 			font-size: 0.85em
 			color: $accent
-			display: block
 			position: absolute
 			width: 100%
 			left: 0
 			padding: 20px
 			bottom: 0
 			background-color: rgba(255,255,255, .8)
-			animation-duration: .3s
-			animation-delay: .5s
-			animation-iteration-count: 1
 			text-transform: uppercase
+			display: none
 		&:hover
 			color: $alt_font_color
 			cursor: pointer
-			background-color: $accent_transparent
-
-
-
+			background-color: lighten($accent_transparent, 10%)
 
 
 
 section.doctors
 	padding: 50px 0px
-	background-color: $third_color
-	.doc_photo_block
-		padding: 20px
-		img
-			width: 100%
-			box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px
-		.doc_description
-			bottom: 0
-			position: absolute
-			padding: 2em
-			padding-right: 4em
-			.doc_description-wrapper
-				background-color: $accent_transparent
-				padding: .8em
-				color: $alt_font_color
-				text-align: center
-			.doc_name
-				text-transform: uppercase
-				font-weight: bold
-				font-size: 1.6em
+	background-color: $alt_font_color
 
-			hr
-				border-top: 5px solid $alt_font_color
-				margin: 0.3em 0
 section#services
 	background-color: rgba(255,255,255,.8)
 	background-blend-mode: screen
@@ -96,13 +125,57 @@ section#services
 		justify-content: center
 		flex-wrap: wrap
 	.service_box
-
-		width: 250px
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+		width: 25%
+		width: calc(30% - 40px)
 		border: 1px solid $accent_less_transparent
-		padding: 20px
+		padding: 0
 		display: block
 		margin: 20px
-		
+		border-top-left-radius: 2em
+		border-bottom-right-radius: 2em
+		background-color: lighten($accent, 10%)
+		position: relative
+
+		img
+			max-width: 100%
+			border-top-left-radius: 2em
+		.service_descr
+			list-style: none
+			padding: 1em
+
+			position: absolute
+			margin: 0
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			display: none
+			background-color: $third_color
+			border-top-left-radius: 2em
+			border-bottom-right-radius: 2em
+			li
+				border-bottom: 1px solid $alt_font_color
+				padding: 0.3em
+				padding-left: 6%
+
+			li:before
+					content: ''
+					display: block
+					height: 12px
+					float: left
+					width: 12px
+
+					background-image: url('../img/svg/correct-symbol.svg')
+					background-size: 12px 12px
+					padding: 10px
+.doc_photo_block
+		h3
+			color: $alt_font_color
+			text-transform: uppercase
+			padding: 0 0.6em
+			font-weight: normal
+
 section.any_questions
 	padding: 20px 0
 	background-color: $third_color
@@ -121,19 +194,10 @@ section.any_questions
 		animation-iteration-count: infinite
 
 section#photos
-  padding-bottom:  50px
-  background-color: rgba(255,255,255,.6)
-  background-blend-mode: screen
-  background-size: cover
-  .img_wrapper
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    img
-      margin: 10px
-      border: 5px solid $alt_font_color
-
-
+    padding-bottom:  50px
+    background-color: rgba(255,255,255,.6)
+    background-blend-mode: screen
+    background-size: cover
 
 
 
@@ -148,7 +212,7 @@ section#contacts
 		input,
 		button,
 		textarea
-			margin: 5px 10px
+			margin: 5px auto
 	position: relative
 	.external_gmap
 		position: absolute
@@ -171,24 +235,77 @@ section#contacts
 			vertical-align: top
 			a
 				color: #333
+
+
 section#articles
-  a.article_block
-    color: #333
-    display: flex
-    flex-wrap: nowrap
-    &:focus,
-    &:hover,
-    &:active
-      text-decoration: none
+	background-color: #fff
+	&.articles--onmain
+		position: relative
+		text-align: left
+		p
+			text-align: justify !important
+		img
+			width: 100%
+		.article_block
+			color: $default-font-color
+			display: block
+			margin: 0.6em
+			&:hover,
+			&:focus,
+			&:active
+				text-decoration: none
 
 
-  hr
-    border-top: 0.1em solid $accent_transparent
-  .article_pic_block,
-  .article_descr_block
-    margin: 10px
+			h2
+				color: $accent
+				text-transform: uppercase
+				font-weight: normal
+		h1
+			color: $accent
+			text-transform: uppercase
+			display: block
+			margin: 1em auto
+			text-align: center
+			font-weight: normal
+
+		a.article_full
+			color: $accent
+			padding: 0.8em
+			text-align: left
+			display: inline
+			transition: all 0.4s ease
+			&:hover,
+			&:focus,
+			&:active
+				padding-left: 10%	
+	&.articles--onlocal
+		padding-bottom: 2em
+		text-align: left
+		h1, h2
+			color: $accent
+			text-transform: uppercase
+			font-weight: normal
+	.col-sm-4:hover
+		background-color: lighten($accent, 30%)
+		transition: all .6s ease
+		a.article_full
+			color: $alt_font_color
+	&.articles--onlocal--caries
+		img
+			display: block
+			margin: 0 auto
+		.col-sm-4:hover
+			background-color: $alt_font_color
+			transition: all .6s ease
+		a.article_full
+			color: $alt_font_color
+	img
+		max-width: 100%
+	.mauto
+		display: block
+		margin: 0 auto
 #footer
-	background-color: $third_color_transparent
+	background-color: $third_color
 	font-size: 0.8em
 	padding-top: 20px
 	a
@@ -225,9 +342,9 @@ section#articles
 		width: 100%
 		color: $alt_font_color
 		padding: 0.6em
-		font-size: 0.7em
+		font-size: 1em
 		text-align: center
-		background-color: lighten($accent, 0%)
+		background-color: darken($third_color, 10%)
 	.col-footer
 		width: 49%
 		display: inline-block
@@ -247,6 +364,7 @@ a.form_callee_button
 	-ms-transition: all 0.3s ease-in
 	-o-transition: all 0.3s ease-in
 	transition: all 0.3s ease-in
+	border-radius: 3em
 	&:hover,
 	&:active,
 	&:focus
@@ -264,3 +382,25 @@ a.form_callee_button
 
 
 
+
+section#services
+  h3
+    padding: 5px
+    text-transform: uppercase
+    font-size: 1em
+    text-align: center
+    color: $alt_font_color
+    font-weight: normal
+  .service_box
+    .service_descr
+      li
+      li:before
+        content: ''
+        display: block
+        height: 12px
+        float: left
+        width: 12px
+        background-repeat: no-repeat
+        background-image: url('../img/svg/correct-symbol.svg')
+        background-size: 12px 12px
+        padding: 10px

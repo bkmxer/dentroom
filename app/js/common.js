@@ -1,12 +1,25 @@
+
 $(document).ready(function() {
-        $('a.menu-trigger').click(function(){
+    $('.preloader').fadeOut('slow');
+    AOS.init();
+
+        $('a.menu-trigger').click(function(e){
             $('nav ul').slideToggle(768);
+            e.preventDefault();
         });
         $(window).resize(function(){
             if($(window).width()>768){
                 $('nav ul').removeAttr('style');
             }
         })
+        $('.nav-underline.fixed_head ul li a').click(function(){
+            if (screen.width<=768){
+                $('nav ul').hide();
+                console.log('hidden');
+            }
+
+        })
+
 
         // var
         var $nav =  $('.nav-underline'),
@@ -15,9 +28,11 @@ $(document).ready(function() {
             lineWidth,
             liPos;
         function refresh (){
-            $activeA = $('nav li a.active');
-            lineWidth = $activeA.parent().outerWidth();
-            liPos =  $activeA.parent().position().left;
+            if (screen.width>=768){
+                $activeA = $('nav li a.active');
+                lineWidth = $activeA.parent().outerWidth();
+                liPos =  $activeA.parent().position().left;
+            }
         }
         refresh();
         $nav.css('position', 'relative');
@@ -40,17 +55,69 @@ $(document).ready(function() {
         //onClick
         $('nav a[href*="#"]').on('click', function() {
 
-            $activeA.removeClass('active');
-            $(this).addClass('active');
-            refresh();
-            lineSet();
+            if (screen.width>=768){
+                $activeA.removeClass('active');
+                $(this).addClass('active');
+                refresh();
+                lineSet();
+            }
 
 
 
         });
 
     $('.parallax-window').parallax({imageSrc: 'img/bg-room.jpeg'});
+
+    /*
+     *  Simple image gallery. Uses default settings
+     */
+
+    $('.fancybox').fancybox();
+
+    /*
+     *  Different effects
+     */
+
+    // Change title type, overlay closing speed
+    $(".fancybox-effects-a").fancybox({
+        helpers: {
+            title : {
+                type : 'outside'
+            },
+            overlay : {
+                locked : false
+            }
+        }
+    });
+
+
+    //E-mail Ajax Send
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "../mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Thank you!");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
 });
+
+
+$('.service_box').hover(
+    function(){
+        $(this).find('ul').slideDown('slow');
+    },
+    function(){
+        $(this).find('ul').hide('slow');
+    });
 
 $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -72,34 +139,32 @@ $(function() {
 var $headerSection = $('.header');
 var $navBarPosition = $('nav').outerHeight(true)+50;
 $(window).scroll(function() {
-    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {}
-    else{
-        if ($(this).scrollTop() > $headerSection.offset().top + $headerSection.outerHeight(true)){
+
+        if ($(this).scrollTop() > $headerSection.offset().top + $headerSection.outerHeight(true)) {
             $('.fixed_head').addClass("sticky");
             $('.aboutUs').css("paddingBottom", $navBarPosition);
         }
         else{
             $('.fixed_head').removeClass("sticky");
             $('.aboutUs').css("paddingBottom", "50px");
-        }
-    }
 
-});
 
+};
+ })
 
 $('.table-cell').hover(
     function(){
-        $(this).find('a').removeClass("hidden");
+        $(this).find('a').slideDown("normal");
 
     },
     function(){
-       $(this).find('a').addClass("hidden");
+       $(this).find('a').slideUp("normal");
 } )
 
 var lastScrollTop = 0;
 $(window).scroll(function(event){
     var st = $(this).scrollTop();
-    if (st > lastScrollTop){
+    if (st > lastScrollTop || st< 800){
         $('#upslider').addClass("hidden");
 
     } else {
@@ -108,5 +173,20 @@ $(window).scroll(function(event){
     }
     lastScrollTop = st;
 });
+
+ //FANCYBOX section start
+
+
+
+//FANCYBOX section end
+
+(function () {
+    $('.nav-underline').on('click', function() {
+        $('.bar').toggleClass('animate');
+    })
+    $('.nav-underline ul li a').on('click', function() {
+        $('.bar').toggleClass('animate');
+    })
+})();
 
 

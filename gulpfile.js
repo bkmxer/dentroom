@@ -53,7 +53,9 @@ gulp.task('headersass', function() {
 gulp.task('libs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/parallax.js/parallax.min.js'
+		'app/libs/parallax.js/parallax.min.js',
+		'app/libs/fancybox/source/jquery.fancybox.js',
+		'app/libs/aos/aos.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
