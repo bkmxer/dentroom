@@ -1,28 +1,6 @@
 @import "bourbon"
 @import "vars"
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
-
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
 
 body
 	font-size: 16px
@@ -205,14 +183,12 @@ section#contacts
 	padding-top: 20px
 	form[action="mail.php"]
 		margin: 20px
+		color: $alt_font_color
 		font-size: 0.8em
 		box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px
-		.legend
-			font-size: 1.2em
-		input,
-		button,
-		textarea
-			margin: 5px auto
+		fieldset
+			border: none
+
 	position: relative
 	.external_gmap
 		position: absolute
