@@ -190,3 +190,4 @@ $(window).scroll(function(event){
 })();
 
 
+// navigationbar active changes
