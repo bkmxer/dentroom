@@ -189,5 +189,10 @@ $(window).scroll(function(event){
     })
 })();
 
-
+$( ".doc_certf_btn" ).click(function() {
+    event.preventDefault();
+    $(".toggle_certf" ).slideToggle( "normal", function() {
+        // Animation complete.
+    });
+});
 // navigationbar active changes
