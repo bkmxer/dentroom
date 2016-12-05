@@ -102,11 +102,25 @@
     .service_box
       h3
 @media only screen and (max-width: 660px)
+  #articles
+    .container
+      img.art_img.float_l.mid_mobile_pic,
+      img.art_img.float_r.mid_mobile_pic
+        display: block
+        margin: 10px auto
+        float: none
   section#services
     .service_box
       width: 80%
 
 @media  only screen and (max-width : 992px)
+  #articles
+    .container
+      img.art_img.float_l.big_mobile_pic,
+      img.art_img.float_r.big_mobile_pic
+        display: block
+        margin: 10px auto
+        float: none
   header.header
     background-image: url('../img/tablet_header.jpg')
   nav
@@ -114,6 +128,7 @@
       a
         padding: 1.2em 0.7em
 @media only screen and (min-width: 992px)
+
   .left-side-wrapper
     margin-top: 0 !important
     p
@@ -158,6 +173,13 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+  #articles
+    .container
+      img.art_img.float_l.sm_mobile_pic,
+      img.art_img.float_r.sm_mobile_pic
+        display: block
+        margin: 10px auto
+        float: none
   section#articles
     table,
     .hidden-table-desc
