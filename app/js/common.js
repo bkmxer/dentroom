@@ -111,13 +111,13 @@ $(document).ready(function() {
 });
 
 
-$('.service_box').hover(
-    function(){
-        $(this).find('ul').slideDown('slow');
-    },
-    function(){
-        $(this).find('ul').hide('slow');
-    });
+/*$('.service_box').hover(
+ function(){
+ $(this).find('ul').slideDown('slow');
+ },
+ function(){
+ $(this).find('ul').hide('slow');
+ });*/
 
 $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
