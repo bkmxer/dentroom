@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f536ffbd-218a-421e-ab12-e4985168109b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/location_photo.png" afterPath="$PROJECT_DIR$/app/img/location_photo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/articles.html" afterPath="$PROJECT_DIR$/app/articles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/brooksism.html" afterPath="$PROJECT_DIR$/app/brooksism.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/caries.html" afterPath="$PROJECT_DIR$/app/caries.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/child_nalet.html" afterPath="$PROJECT_DIR$/app/child_nalet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cleaning.html" afterPath="$PROJECT_DIR$/app/cleaning.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/doctors.html" afterPath="$PROJECT_DIR$/app/doctors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/gallery.html" afterPath="$PROJECT_DIR$/app/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/germetizacia_fissur.html" afterPath="$PROJECT_DIR$/app/germetizacia_fissur.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/periodontit_u_detey.html" afterPath="$PROJECT_DIR$/app/periodontit_u_detey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/periostit_child.html" afterPath="$PROJECT_DIR$/app/periostit_child.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pregrant.html" afterPath="$PROJECT_DIR$/app/pregrant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pulpit.html" afterPath="$PROJECT_DIR$/app/pulpit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reminalization.html" afterPath="$PROJECT_DIR$/app/reminalization.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/teeth_ftor.html" afterPath="$PROJECT_DIR$/app/teeth_ftor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/doctor-1.jpg" afterPath="$PROJECT_DIR$/app/img/doctor-1.jpg" />
     </list>
     <ignored path="dentroom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,8 +139,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="31">
-                  <caret line="678" column="32" selection-start-line="678" selection-start-column="32" selection-end-line="678" selection-end-column="32" />
+                <state relative-caret-position="-82">
+                  <caret line="219" column="37" selection-start-line="219" selection-start-column="28" selection-end-line="219" selection-end-column="37" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -490,12 +474,12 @@
       <workItem from="1480931365801" duration="15847000" />
       <workItem from="1480963057383" duration="12525000" />
       <workItem from="1481275979860" duration="2122000" />
-      <workItem from="1481747474467" duration="3753000" />
+      <workItem from="1481747474467" duration="4464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225464000" />
+    <option name="totallyTimeSpent" value="226175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
@@ -861,7 +845,7 @@
         <state relative-caret-position="172">
           <caret line="293" column="70" selection-start-line="293" selection-start-column="70" selection-end-line="293" selection-end-column="70" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -871,8 +855,8 @@
         <state relative-caret-position="87">
           <caret line="274" column="70" selection-start-line="274" selection-start-column="70" selection-end-line="274" selection-end-column="70" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -882,7 +866,7 @@
         <state relative-caret-position="172">
           <caret line="209" column="70" selection-start-line="209" selection-start-column="70" selection-end-line="209" selection-end-column="70" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,7 +876,7 @@
         <state relative-caret-position="172">
           <caret line="311" column="70" selection-start-line="311" selection-start-column="70" selection-end-line="311" selection-end-column="70" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -998,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="678" column="32" selection-start-line="678" selection-start-column="32" selection-end-line="678" selection-end-column="32" />
+        <state relative-caret-position="-82">
+          <caret line="219" column="37" selection-start-line="219" selection-start-column="28" selection-end-line="219" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
