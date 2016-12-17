@@ -213,7 +213,14 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-  /* Medium Devices, Desktops */
+  .row.table-row
+    display: table
+    border-spacing: 0
+    div[class*="col-"].table-cell
+      float: none
+      display: table-cell
+      vertical-align: top
+      padding: 20px
 @media only screen and (min-width : 992px)
   .row.table-row
     display: table
