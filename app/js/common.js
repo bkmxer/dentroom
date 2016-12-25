@@ -152,14 +152,7 @@ $(window).scroll(function() {
 };
  })
 
-$('.table-cell').hover(
-    function(){
-        $(this).find('a').slideDown("normal");
 
-    },
-    function(){
-       $(this).find('a').slideUp("normal");
-} )
 
 var lastScrollTop = 0;
 $(window).scroll(function(event){

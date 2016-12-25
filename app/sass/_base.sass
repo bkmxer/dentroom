@@ -7,11 +7,17 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: $default-font
 	overflow-x: hidden
 section.doctors
+	background-image: url(../img/doctors-bg.jpg)
+	-webkit-background-size: cover
+	background-size: cover
+	padding-top: 1em !important
+	p
+		text-shadow: 2px 2px 6px #fff
 	.doc_certf_btn
 		margin-top: 2em
+		max-width: 25em
 	.toggle_certf
 		display: none
 
@@ -70,29 +76,20 @@ section.aboutUs
 		color: #fff
 .row.table-row
 	div[class*="col-"].table-cell
-		background-color: lighten($accent, 10%)
 		border: none
 		padding: 20px
-		color: $alt_font_color
-		&:nth-child(2)
-			background-color: lighten($accent, 30%)
-			&:hover
-				background-color: lighten($accent_transparent, 30%)
+		color: #000
+		p
+			margin-bottom: 3em
 		a
 			font-size: 0.85em
 			color: $accent
 			position: absolute
-			width: 100%
+			width: 90%
 			left: 0
-			padding: 20px
+			right: 0
 			bottom: 0
-			background-color: rgba(255,255,255, .8)
 			text-transform: uppercase
-			display: none
-		&:hover
-			color: $alt_font_color
-			cursor: pointer
-			background-color: lighten($accent_transparent, 10%)
 
 
 
@@ -101,7 +98,7 @@ section.doctors
 	background-color: $alt_font_color
 
 section#services
-	padding: 50px 0px 50px 0px
+	padding: 1em 0 2em 0
 	.flex-services_wrapper
 		display: flex
 		justify-content: center
@@ -154,6 +151,14 @@ section.any_questions
 		-moz-animation-iteration-count: infinite
 		-o-animation-iteration-count: infinite
 		animation-iteration-count: infinite
+section#info
+	text-align: center
+	hr
+		border-top-color: $accent
+		margin-top: 0.2em
+	h2
+		color: $accent
+		margin: 1em auto 0 auto
 
 section#photos
     padding-bottom:  50px
@@ -369,11 +374,16 @@ a.form_callee_button
 	&.ask_button
 		width: 100%
 		margin-top: 15%
-
-
-
-
-
+	&.form_callee_button--alt
+		background-color: transparent
+		border-color: $accent
+		color: $accent !important
+		font-weight: normal
+		transition: all 0.3s ease
+		width: 100%
+		&:hover
+			background-color: $alt_font_color
+			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
 
 section#services
   h3
