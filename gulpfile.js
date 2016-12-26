@@ -55,6 +55,7 @@ gulp.task('libs', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/parallax.js/parallax.min.js',
 		'app/libs/fancybox/source/jquery.fancybox.js',
+		'app/libs/owl/owl.carousel.min.js',
 		'app/libs/aos/aos.js'
 		])
 		.pipe(concat('libs.min.js'))

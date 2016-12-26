@@ -90,6 +90,8 @@ $(document).ready(function() {
         }
     });
 
+// owl for slider
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
@@ -183,4 +185,11 @@ $(window).scroll(function(event){
 })();
 
 
-// navigationbar active changes
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav: false,
+    autoplay: true,
+    items: 1,
+    autoplayTimeout: 5000
+});

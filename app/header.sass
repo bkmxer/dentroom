@@ -66,13 +66,19 @@ h1, h2
 h1
   text-align: center
 header
-  background-image: url(img/smiling.jpg)
-  -webkit-background-size: cover
-  background-size: cover
   color: $alt_font_color
   &.gallery_header
     background-image: none
     min-height: 20vh
+  .owl-carousel
+    position: absolute
+    z-index: -100
+    bottom: 0
+    top: 0
+    min-height: 90vh
+    width: 1200px
+    max-height: 90vh
+
   .logo
     img
       width: 100%

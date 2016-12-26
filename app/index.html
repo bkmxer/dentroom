@@ -42,7 +42,7 @@
 	<script>loadCSS( "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", false, "all" );</script>
 	<script>loadCSS( "css/jquery.fancybox.css", false, "all" ); // fancybox plugin</script>
 	<script>loadCSS( "css/aos.css", false, "all" ); // animate on scroll plugin</script>
-
+	<script>loadCSS( "css/owl.carousel.min.css", false, "all" ); // animate on scroll plugin</script>
 
 
 	<!-- Load Custom CSS End -->
@@ -52,6 +52,7 @@
 		<link rel="stylesheet" href="css/fonts.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
 		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/aos.css">
 	</noscript>
 	<!-- Load Custom CSS Compiled without JS End -->
@@ -84,6 +85,14 @@
 
 	<!-- Custom HTML -->
 <header class="header" id="main">
+	<div class="owl-carousel  hidden-sm hidden-xs">
+		<div><img src="img/smiling.jpg" alt=""></div>
+
+		<div><img src="img/smiling-1.jpg" alt=""></div>
+
+		<div><img src="img/smiling-2.jpg" alt=""></div>
+
+	</div>
 <div class="top_line">
 	<div class="container">
 		<div class="row">
@@ -119,11 +128,13 @@
 		</div>
 	</div>
 </div>
+
 	<div class="container">
+
 		<div class="row">
 			<div class="col-sm-7">
 				<div class="left-side-wrapper">
-					<h1><span style="color: #333;" >Стоматологический кабинет</span><br><img src="img/Logo_dark.png" alt="ANTONENKO-DENTROOM"  style="max-width: 50%"/></h1>
+					<h1><span style="color: #333; text-shadow: 2px 2px 6px rgba(255, 255, 255, 1)" >Стоматологический кабинет</span><br><img src="img/Logo_dark.png" alt="ANTONENKO-DENTROOM"  style="max-width: 50%"/></h1>
 
 					<p>Многолетний опыт и забота о пациентах совместно с современными европейскими технологиями избавят вас от страхов перед стоматологами навсегда
 					</p>
@@ -610,7 +621,9 @@
 	</div>
 	<hr>
 	<div class="cprt">Copyright 2016 &copy All rights reserved.</div>
+
 </footer>
+
 <div id="upslider" class=" upslider hidden" width="50px" height="50px">
 	<a href="#main">
 		<img src="img/svg/upload.svg" alt="Вверх!" style="width: 1em; height: 1em; display: block; margin: auto;">
@@ -687,6 +700,7 @@
 		mapPath.setMap(map);
 	}
 </script>
+
 <!-- Optimized loading JS End -->
 
 </body>
