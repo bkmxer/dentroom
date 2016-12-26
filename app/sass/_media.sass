@@ -9,21 +9,9 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   section#services
-    .service_box
-      .service_img
-        img
-          width: 90%
-          position: relative
 
-      ul.service_descr
-        margin-left: auto
-        display: block
 
-  section#services
-    .service_box
-      h3.service_name
-        font-size: 0.8em
-        letter-spacing: 0
+
   section.aboutUs
     .table-cell
       h2
@@ -98,9 +86,6 @@
       margin-top: 0
   section#contacts
     background-color: lighten( $accent_transparent, 40%)
-  section#services
-    .service_box
-      h3
 @media only screen and (max-width: 660px)
   #articles
     .container
@@ -109,9 +94,7 @@
         display: block
         margin: 10px auto
         float: none
-  section#services
-    .service_box
-      width: 80%
+
 
 @media  only screen and (max-width : 992px)
   #articles
@@ -166,8 +149,6 @@
 
 @media only screen and (max-width : 579px)
   section#services
-    .flex-services_wrapper
-    .service_box
 
 
 
@@ -250,9 +231,7 @@
       li
         &:hover
           transform: scale(1.1)
-  .service_box
-    border: 1px solid $accent_transparent
-    width: 45%
+
 @media only screen and (max-width: 660px)
   section.prices
     ul
@@ -270,3 +249,9 @@
           bottom: 5%
           right: 10%
           left: 10%
+@media only screen and (max-width: 405px)
+  section.prices
+    ul
+      li
+        width: 100%
+
