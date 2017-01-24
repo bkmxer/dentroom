@@ -101,7 +101,7 @@ $(document).ready(function() {
             url: "../mail.php", //Change
             data: th.serialize()
         }).done(function() {
-            alert("Thank you!");
+            alert("Спасибо за заявку!");
             setTimeout(function() {
                 // Done Functions
                 th.trigger("reset");
@@ -191,5 +191,8 @@ $('.owl-carousel').owlCarousel({
     nav: false,
     autoplay: true,
     items: 1,
-    autoplayTimeout: 5000
+    autoplayTimeout: 10000,
+    animateIn: 'fadeIn', // add this
+    animateOut: 'fadeOut' // and this
+
 });

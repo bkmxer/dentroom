@@ -43,6 +43,7 @@
 	<script>loadCSS( "css/jquery.fancybox.css", false, "all" ); // fancybox plugin</script>
 	<script>loadCSS( "css/aos.css", false, "all" ); // animate on scroll plugin</script>
 	<script>loadCSS( "css/owl.carousel.min.css", false, "all" ); // animate on scroll plugin</script>
+	<script>loadCSS( "css/animate.css", false, "all" ); // animate on scroll plugin</script>
 
 
 	<!-- Load Custom CSS End -->
@@ -54,6 +55,7 @@
 		<link rel="stylesheet" href="css/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/aos.css">
+		<link rel="stylesheet" href="css/animate.css">
 	</noscript>
 	<!-- Load Custom CSS Compiled without JS End -->
 
@@ -69,6 +71,34 @@
 </head>
 
 <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter42244394 = new Ya.Metrika({
+					id:42244394,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true
+				});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/42244394" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <div class="preloader">
 	<div class='preloader-dotline'>
 		<div class='dot'></div>
@@ -91,7 +121,11 @@
 		<div><img src="img/smiling-1.jpg" alt=""></div>
 
 		<div><img src="img/smiling-2.jpg" alt=""></div>
+		<div><img src="img/smiling.jpg" alt=""></div>
 
+		<div><img src="img/smiling-1.jpg" alt=""></div>
+
+		<div><img src="img/smiling-2.jpg" alt=""></div>
 	</div>
 <div class="top_line">
 	<div class="container">
@@ -108,6 +142,7 @@
 			</div>
 			<div class="col-md-4 hidden-sm hidden-xs">
 				<div class="logo">
+					<h2 style="color: #fff; text-align: center; margin: 0; margin-top: 0.3em; line-height: 1.3em;font-weight: 100; font-size: 1em;">Стоматологический кабинет</h2>
 					<img src="img/Logo_white.png" alt="Antonenko Dentroom">
 				</div>
 			</div>
@@ -133,10 +168,10 @@
 
 		<div class="row">
 			<div class="col-sm-7">
-				<div class="left-side-wrapper">
-					<h1><span style="color: #333; text-shadow: 2px 2px 6px rgba(255, 255, 255, 1)" >Стоматологический кабинет</span><br><img src="img/Logo_dark.png" alt="ANTONENKO-DENTROOM"  style="max-width: 50%"/></h1>
+				<div class="left-side-wrapper " style="visibility: hidden;">
+					<h1 ><span style="color: #333; text-shadow: 2px 2px 6px rgba(255, 255, 255, 1)" >Стоматологический кабинет</span><br><img src="img/Logo_dark.png" alt="ANTONENKO-DENTROOM"  style="max-width: 50%"/></h1>
 
-					<p>Многолетний опыт и забота о пациентах совместно с современными европейскими технологиями избавят вас от страхов перед стоматологами навсегда
+					<p >Многолетний опыт и забота о пациентах совместно с современными европейскими технологиями избавят вас от страхов перед стоматологами навсегда
 					</p>
 				</div>
 			</div>
@@ -145,12 +180,12 @@
 					<fieldset>
 						<div class="legend">Записаться на прием</div>
 						<p>Представьтесь, пожалуйста</p>
-						<input type="text" placeholder="" required/>
+						<input type="text" placeholder="" name="cf_name" required/>
 						<p>Ваш контактный телефон</p>
-						<input type="tel" placeholder="" />
+						<input type="tel" placeholder="" name="cf_tel" />
 						<p>Ваш EMAIL</p>
-						<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="" required/>
-						<button type="submit">Отправить</button>
+						<input type="email" name="cf_mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="" required/>
+						<input type="submit" value="Отправить" />
 					</fieldset>
 				</form>
 			</div>
@@ -292,7 +327,7 @@
 			<div class="col-xs-12">
 				<div class="flex-services_wrapper">
                     <div class="flex-services_object">
-                        <img src="img/svg/services_teeth.svg" alt="" style="width: 40%; display: block; margin: 0 auto;">
+                        <img src="img/svg/services_teeth.svg" alt="" style="width: 120px; display: block; margin: 0 auto;">
                         <h3>КЛАССИЧЕСКАЯ СТОМАТОЛОГИЯ И ПРОФИЛАКТИКА</h3>
                         <ul>
                             <li class="services-list">Лечение кариеса</li>
@@ -302,7 +337,7 @@
                         </ul>
                     </div>
                     <div class="flex-services_object">
-                        <img src="img/svg/services_canine.svg" alt="" style="width: 40%; display: block; margin: 0 auto;">
+                        <img src="img/svg/services_canine.svg" alt="" style="width: 120px; display: block; margin: 0 auto;">
                         <h3>КОСМЕТИЧЕСКИЕ РЕШЕНИЯ</h3>
                         <ul>
                             <li class="services-list">Отбеливание зубов</li>
@@ -312,7 +347,7 @@
                         </ul>
                     </div>
                     <div class="flex-services_object">
-                        <img src="img/svg/service_child.svg" alt="" style="width: 40%; display: block; margin: 0 auto;">
+                        <img src="img/svg/service_child.svg" alt="" style="width: 120px; display: block; margin: 0 auto;">
                         <h3>ДЕТСКАЯ СТОМАТОЛОГИЯ</h3>
                         <ul>
                             <li class="services-list">Профилактика кариеса</li>
@@ -322,7 +357,7 @@
                         </ul>
                     </div>
                     <div class="flex-services_object">
-                        <img src="img/svg/service_gigiene.svg" alt="" style="width: 40%; display: block; margin: 0 auto;">
+                        <img src="img/svg/service_gigiene.svg" alt="" style="width: 120px; display: block; margin: 0 auto;">
                         <h3>ГИГИЕНА ПОЛОСТИ РТА</h3>
                         <ul>
                             <li class="services-list">Профессиональная гигиена полости рта</li>
@@ -332,7 +367,7 @@
                         </ul>
                     </div>
                     <div class="flex-services_object">
-                        <img src="img/svg/services_implants.svg" alt="" style="width: 40%; display: block; margin: 0 auto;">
+                        <img src="img/svg/services_implants.svg" alt="" style="width: 120px; display: block; margin: 0 auto;">
                         <h3>ОРТОПЕДИЧЕСКАЯ СТОМАТОЛОГИЯ</h3>
                         <ul>
                             <li class="services-list">изготовление и установка коронок</li>
@@ -341,7 +376,7 @@
                         </ul>
                     </div>
                     <div class="flex-services_object">
-                        <img src="img/svg/services_extraction.svg" alt="" style="width: 40%; display: block; margin: 0 auto;">
+                        <img src="img/svg/services_extraction.svg" alt="" style="width: 120px; display: block; margin: 0 auto;">
                         <h3>ХИРУРГИЧЕСКАЯ СТОМАТОЛОГИЯ</h3>
                         <ul>
                             <li class="services-list">Удаление зубов</li>
@@ -467,7 +502,7 @@
 					<p class="crumbs">
 
 					</p>
-					<p>Повышенная чувствительность эмали, появление трещин на зубах, возникновение кариеса – все эти неприятные явления возникают в результате вымывания из эмали минералов и других микроэлементов. Для восстановления зуба проводится реминерализации эмали.
+					<p>Повышенная чувствительность эмали, появление трещин на зубах, возникновение кариеса – все эти явления возникают в результате вымывания из эмали минералов. Для восстановления зуба проводится реминерализации эмали.
 						<br>
 
 					</p>
@@ -484,8 +519,8 @@
 					<p class="crumbs">
 
 					</p>
-					<p>Очень часто на осмотре у стоматолога мы слышим фразу: «Давайте по-фторируем зубы, они станут более устойчивые к возникновению кариеса» Но как понять, это «бизнес-программа» такая,  или действительно это полезно для здоровья.
-						<br> Разберёмся! Спешу успокоить, что да, это действительно полезно. Но есть и «Но…»
+					<p>Очень часто на осмотре у стоматолога мы слышим фразу: «Давайте по-фторируем зубы, они станут более устойчивые к возникновению кариеса» Но как понять, это «бизнес-программа»,  или  это действительно полезно?
+						<br> Спешу успокоить, это действительно полезно. Но есть и «Но…»
 
 						<br>
 
@@ -547,14 +582,14 @@
 						<fieldset>
 							<div class="legend">Записаться на прием</div>
 							<p>Представьтесь, пожалуйста</p>
-							<input type="text" placeholder="" required/>
+							<input type="text" placeholder="" name="cf_name" required/>
 							<p>Ваш контактный телефон</p>
-							<input type="tel" placeholder="" />
+							<input type="tel" placeholder="" name="cf_tel" />
 							<p>Ваш EMAIL</p>
-							<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="" required/>
+							<input type="email" name="cf_mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="" required/>
 							<p>Ваше сообщение</p>
-							<textarea name="" id="" cols="30" rows="3" placeholder=""></textarea>
-							<button type="submit">Отправить</button>
+							<textarea name="cf_message" id="" cols="30" rows="3" placeholder=""></textarea>
+							<input type="submit" value="Отправить" />
 						</fieldset>
 					</form>
 				</div>
